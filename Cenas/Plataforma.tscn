@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assests/TILESET/SPACE.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32.1422, 16.1066 )
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 2, 1.96 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -23.9233, -24.2688 )
+scale = Vector2( 0.497852, 0.52216 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 384, 0, 64, 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
+scale = Vector2( 1, 1 )
+shape = SubResource( 1 )
