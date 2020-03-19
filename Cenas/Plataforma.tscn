@@ -18,5 +18,4 @@ region_rect = Rect2( 384, 0, 64, 32 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
-scale = Vector2( 1, 1 )
 shape = SubResource( 1 )

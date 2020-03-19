@@ -14,6 +14,7 @@ size = 53
 font_data = ExtResource( 3 )
 
 [node name="Menu" type="Control"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1.0
@@ -27,7 +28,6 @@ texture = ExtResource( 2 )
 expand = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -2.05054
@@ -36,7 +36,6 @@ margin_right = -2.05054
 margin_bottom = -2.05054
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-editor/display_folded = true
 margin_left = 108.0
 margin_top = 150.0
 margin_right = 915.0

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assests/TILESET/coracao-png-14.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+resource_name = "DrawLifes"
+script/source = "extends Node2D
+
+
+export(Texture) var textura
+
+func _ready():
+	Game.connect(\"lifes_changed\", self, \"on_lifes_change\")
+	pass
+
+func on_lifes_change():
+	update()
+	pass
+	
+func _draw():
+	for n in range(0, Game.lifes):
+		draw_texture(textura, Vector2(n * textura.get_width(),0))
+	pass"
+
+[node name="Hud" type="CanvasLayer"]
+editor/display_folded = true
+layer = 10
+
+[node name="life" type="Node2D" parent="."]
+scale = Vector2( 0.02, 0.02 )
+script = SubResource( 1 )
+textura = ExtResource( 1 )

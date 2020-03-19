@@ -1,9 +1,11 @@
 extends Node
 
 var lifes = 3 setget setLifes
-var person = 2 setget setPerson
+var person = 1 setget setPerson
+var coin = 10 setget setCoin
 
 signal lifes_changed
+signal coins_change
 
 
 func _ready():
@@ -15,4 +17,8 @@ func setLifes(val):
 	
 func setPerson(val):
 	person = val
+	
+func setCoin(val):
+	coin = val
+	emit_signal("coins_change")
 	

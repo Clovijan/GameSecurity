@@ -51,52 +51,52 @@
 [ext_resource path="res://Assests/GIRL/Jump (28).png" type="Texture" id=49]
 [ext_resource path="res://Assests/GIRL/Jump (29).png" type="Texture" id=50]
 [ext_resource path="res://Assests/GIRL/Jump (30).png" type="Texture" id=51]
-[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=52]
-[ext_resource path="res://Assests/GIRL/Idle (2).png" type="Texture" id=53]
-[ext_resource path="res://Assests/GIRL/Idle (3).png" type="Texture" id=54]
-[ext_resource path="res://Assests/GIRL/Idle (4).png" type="Texture" id=55]
-[ext_resource path="res://Assests/GIRL/Idle (5).png" type="Texture" id=56]
-[ext_resource path="res://Assests/GIRL/Idle (6).png" type="Texture" id=57]
-[ext_resource path="res://Assests/GIRL/Idle (7).png" type="Texture" id=58]
-[ext_resource path="res://Assests/GIRL/Idle (8).png" type="Texture" id=59]
-[ext_resource path="res://Assests/GIRL/Idle (9).png" type="Texture" id=60]
-[ext_resource path="res://Assests/GIRL/Idle (10).png" type="Texture" id=61]
-[ext_resource path="res://Assests/GIRL/Idle (11).png" type="Texture" id=62]
-[ext_resource path="res://Assests/GIRL/Idle (12).png" type="Texture" id=63]
-[ext_resource path="res://Assests/GIRL/Idle (13).png" type="Texture" id=64]
-[ext_resource path="res://Assests/GIRL/Idle (14).png" type="Texture" id=65]
-[ext_resource path="res://Assests/GIRL/Idle (15).png" type="Texture" id=66]
-[ext_resource path="res://Assests/GIRL/Idle (16).png" type="Texture" id=67]
-[ext_resource path="res://Assests/GIRL/Dead (1).png" type="Texture" id=68]
-[ext_resource path="res://Assests/GIRL/Dead (2).png" type="Texture" id=69]
-[ext_resource path="res://Assests/GIRL/Dead (3).png" type="Texture" id=70]
-[ext_resource path="res://Assests/GIRL/Dead (4).png" type="Texture" id=71]
-[ext_resource path="res://Assests/GIRL/Dead (5).png" type="Texture" id=72]
-[ext_resource path="res://Assests/GIRL/Dead (6).png" type="Texture" id=73]
-[ext_resource path="res://Assests/GIRL/Dead (7).png" type="Texture" id=74]
-[ext_resource path="res://Assests/GIRL/Dead (8).png" type="Texture" id=75]
-[ext_resource path="res://Assests/GIRL/Dead (9).png" type="Texture" id=76]
-[ext_resource path="res://Assests/GIRL/Dead (10).png" type="Texture" id=77]
-[ext_resource path="res://Assests/GIRL/Dead (11).png" type="Texture" id=78]
-[ext_resource path="res://Assests/GIRL/Dead (12).png" type="Texture" id=79]
-[ext_resource path="res://Assests/GIRL/Dead (13).png" type="Texture" id=80]
-[ext_resource path="res://Assests/GIRL/Dead (14).png" type="Texture" id=81]
-[ext_resource path="res://Assests/GIRL/Dead (15).png" type="Texture" id=82]
-[ext_resource path="res://Assests/GIRL/Dead (16).png" type="Texture" id=83]
-[ext_resource path="res://Assests/GIRL/Dead (17).png" type="Texture" id=84]
-[ext_resource path="res://Assests/GIRL/Dead (18).png" type="Texture" id=85]
-[ext_resource path="res://Assests/GIRL/Dead (19).png" type="Texture" id=86]
-[ext_resource path="res://Assests/GIRL/Dead (20).png" type="Texture" id=87]
-[ext_resource path="res://Assests/GIRL/Dead (21).png" type="Texture" id=88]
-[ext_resource path="res://Assests/GIRL/Dead (22).png" type="Texture" id=89]
-[ext_resource path="res://Assests/GIRL/Dead (23).png" type="Texture" id=90]
-[ext_resource path="res://Assests/GIRL/Dead (24).png" type="Texture" id=91]
-[ext_resource path="res://Assests/GIRL/Dead (25).png" type="Texture" id=92]
-[ext_resource path="res://Assests/GIRL/Dead (26).png" type="Texture" id=93]
-[ext_resource path="res://Assests/GIRL/Dead (27).png" type="Texture" id=94]
-[ext_resource path="res://Assests/GIRL/Dead (28).png" type="Texture" id=95]
-[ext_resource path="res://Assests/GIRL/Dead (29).png" type="Texture" id=96]
-[ext_resource path="res://Assests/GIRL/Dead (30).png" type="Texture" id=97]
+[ext_resource path="res://Assests/GIRL/Dead (1).png" type="Texture" id=52]
+[ext_resource path="res://Assests/GIRL/Dead (2).png" type="Texture" id=53]
+[ext_resource path="res://Assests/GIRL/Dead (3).png" type="Texture" id=54]
+[ext_resource path="res://Assests/GIRL/Dead (4).png" type="Texture" id=55]
+[ext_resource path="res://Assests/GIRL/Dead (5).png" type="Texture" id=56]
+[ext_resource path="res://Assests/GIRL/Dead (6).png" type="Texture" id=57]
+[ext_resource path="res://Assests/GIRL/Dead (7).png" type="Texture" id=58]
+[ext_resource path="res://Assests/GIRL/Dead (8).png" type="Texture" id=59]
+[ext_resource path="res://Assests/GIRL/Dead (9).png" type="Texture" id=60]
+[ext_resource path="res://Assests/GIRL/Dead (10).png" type="Texture" id=61]
+[ext_resource path="res://Assests/GIRL/Dead (11).png" type="Texture" id=62]
+[ext_resource path="res://Assests/GIRL/Dead (12).png" type="Texture" id=63]
+[ext_resource path="res://Assests/GIRL/Dead (13).png" type="Texture" id=64]
+[ext_resource path="res://Assests/GIRL/Dead (14).png" type="Texture" id=65]
+[ext_resource path="res://Assests/GIRL/Dead (15).png" type="Texture" id=66]
+[ext_resource path="res://Assests/GIRL/Dead (16).png" type="Texture" id=67]
+[ext_resource path="res://Assests/GIRL/Dead (17).png" type="Texture" id=68]
+[ext_resource path="res://Assests/GIRL/Dead (18).png" type="Texture" id=69]
+[ext_resource path="res://Assests/GIRL/Dead (19).png" type="Texture" id=70]
+[ext_resource path="res://Assests/GIRL/Dead (20).png" type="Texture" id=71]
+[ext_resource path="res://Assests/GIRL/Dead (21).png" type="Texture" id=72]
+[ext_resource path="res://Assests/GIRL/Dead (22).png" type="Texture" id=73]
+[ext_resource path="res://Assests/GIRL/Dead (23).png" type="Texture" id=74]
+[ext_resource path="res://Assests/GIRL/Dead (24).png" type="Texture" id=75]
+[ext_resource path="res://Assests/GIRL/Dead (25).png" type="Texture" id=76]
+[ext_resource path="res://Assests/GIRL/Dead (26).png" type="Texture" id=77]
+[ext_resource path="res://Assests/GIRL/Dead (27).png" type="Texture" id=78]
+[ext_resource path="res://Assests/GIRL/Dead (28).png" type="Texture" id=79]
+[ext_resource path="res://Assests/GIRL/Dead (29).png" type="Texture" id=80]
+[ext_resource path="res://Assests/GIRL/Dead (30).png" type="Texture" id=81]
+[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=82]
+[ext_resource path="res://Assests/GIRL/Idle (2).png" type="Texture" id=83]
+[ext_resource path="res://Assests/GIRL/Idle (3).png" type="Texture" id=84]
+[ext_resource path="res://Assests/GIRL/Idle (4).png" type="Texture" id=85]
+[ext_resource path="res://Assests/GIRL/Idle (5).png" type="Texture" id=86]
+[ext_resource path="res://Assests/GIRL/Idle (6).png" type="Texture" id=87]
+[ext_resource path="res://Assests/GIRL/Idle (7).png" type="Texture" id=88]
+[ext_resource path="res://Assests/GIRL/Idle (8).png" type="Texture" id=89]
+[ext_resource path="res://Assests/GIRL/Idle (9).png" type="Texture" id=90]
+[ext_resource path="res://Assests/GIRL/Idle (10).png" type="Texture" id=91]
+[ext_resource path="res://Assests/GIRL/Idle (11).png" type="Texture" id=92]
+[ext_resource path="res://Assests/GIRL/Idle (12).png" type="Texture" id=93]
+[ext_resource path="res://Assests/GIRL/Idle (13).png" type="Texture" id=94]
+[ext_resource path="res://Assests/GIRL/Idle (14).png" type="Texture" id=95]
+[ext_resource path="res://Assests/GIRL/Idle (15).png" type="Texture" id=96]
+[ext_resource path="res://Assests/GIRL/Idle (16).png" type="Texture" id=97]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -110,14 +110,14 @@ animations = [ {
 "name": "Jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ],
-"loop": true,
-"name": "Ide",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ) ],
+"frames": [ ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ) ],
 "loop": true,
 "name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ) ],
+"loop": true,
+"name": "Ide",
 "speed": 5.0
 } ]
 
@@ -125,7 +125,7 @@ animations = [ {
 radius = 31.0117
 height = 67.8419
 
-[node name="PlayerGirl" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D"]
 position = Vector2( -23.7999, 34.5349 )
 input_pickable = true
 collision_layer = 2
