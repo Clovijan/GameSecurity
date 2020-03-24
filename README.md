@@ -1,2 +1,2 @@
 # GameSecurity
-Projeto para a disciplina Auditoria e Segurança criação de um jogo educativo com Godot Engine
+Projeto para a disciplina Auditoria e Segurança da Informação. O projeto tem por objetivo criar um jogo educativo sobre segurança da informação.
