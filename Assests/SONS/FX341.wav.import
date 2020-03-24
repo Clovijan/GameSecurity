@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/FX341.wav-7de332e41c0dccb1be32c90e3abc8ffc.sample"
+
+[deps]
+
+source_file="res://Assests/SONS/FX341.wav"
+dest_files=[ "res://.import/FX341.wav-7de332e41c0dccb1be32c90e3abc8ffc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
