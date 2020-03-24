@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/PlayerGirl.gd" type="Script" id=1]
 [ext_resource path="res://Assests/BOY/Run (2).png" type="Texture" id=2]
@@ -15,21 +15,21 @@
 [ext_resource path="res://Assests/BOY/Run (13).png" type="Texture" id=13]
 [ext_resource path="res://Assests/BOY/Run (14).png" type="Texture" id=14]
 [ext_resource path="res://Assests/BOY/Run (15).png" type="Texture" id=15]
-[ext_resource path="res://Assests/BOY/Jump (1).png" type="Texture" id=16]
-[ext_resource path="res://Assests/BOY/Jump (2).png" type="Texture" id=17]
-[ext_resource path="res://Assests/BOY/Jump (3).png" type="Texture" id=18]
-[ext_resource path="res://Assests/BOY/Jump (4).png" type="Texture" id=19]
-[ext_resource path="res://Assests/BOY/Jump (5).png" type="Texture" id=20]
-[ext_resource path="res://Assests/BOY/Jump (6).png" type="Texture" id=21]
-[ext_resource path="res://Assests/BOY/Jump (7).png" type="Texture" id=22]
-[ext_resource path="res://Assests/BOY/Jump (8).png" type="Texture" id=23]
-[ext_resource path="res://Assests/BOY/Jump (9).png" type="Texture" id=24]
-[ext_resource path="res://Assests/BOY/Jump (10).png" type="Texture" id=25]
-[ext_resource path="res://Assests/BOY/Jump (11).png" type="Texture" id=26]
-[ext_resource path="res://Assests/BOY/Jump (12).png" type="Texture" id=27]
-[ext_resource path="res://Assests/BOY/Jump (13).png" type="Texture" id=28]
-[ext_resource path="res://Assests/BOY/Jump (14).png" type="Texture" id=29]
-[ext_resource path="res://Assests/BOY/Jump (15).png" type="Texture" id=30]
+[ext_resource path="res://Assests/BOY/Idle (1).png" type="Texture" id=16]
+[ext_resource path="res://Assests/BOY/Idle (2).png" type="Texture" id=17]
+[ext_resource path="res://Assests/BOY/Idle (3).png" type="Texture" id=18]
+[ext_resource path="res://Assests/BOY/Idle (4).png" type="Texture" id=19]
+[ext_resource path="res://Assests/BOY/Idle (5).png" type="Texture" id=20]
+[ext_resource path="res://Assests/BOY/Idle (6).png" type="Texture" id=21]
+[ext_resource path="res://Assests/BOY/Idle (7).png" type="Texture" id=22]
+[ext_resource path="res://Assests/BOY/Idle (8).png" type="Texture" id=23]
+[ext_resource path="res://Assests/BOY/Idle (9).png" type="Texture" id=24]
+[ext_resource path="res://Assests/BOY/Idle (10).png" type="Texture" id=25]
+[ext_resource path="res://Assests/BOY/Idle (11).png" type="Texture" id=26]
+[ext_resource path="res://Assests/BOY/Idle (12).png" type="Texture" id=27]
+[ext_resource path="res://Assests/BOY/Idle (13).png" type="Texture" id=28]
+[ext_resource path="res://Assests/BOY/Idle (14).png" type="Texture" id=29]
+[ext_resource path="res://Assests/BOY/Idle (15).png" type="Texture" id=30]
 [ext_resource path="res://Assests/BOY/Dead (1).png" type="Texture" id=31]
 [ext_resource path="res://Assests/BOY/Dead (2).png" type="Texture" id=32]
 [ext_resource path="res://Assests/BOY/Dead (3).png" type="Texture" id=33]
@@ -45,69 +45,102 @@
 [ext_resource path="res://Assests/BOY/Dead (13).png" type="Texture" id=43]
 [ext_resource path="res://Assests/BOY/Dead (14).png" type="Texture" id=44]
 [ext_resource path="res://Assests/BOY/Dead (15).png" type="Texture" id=45]
-[ext_resource path="res://Assests/BOY/Idle (1).png" type="Texture" id=46]
-[ext_resource path="res://Assests/BOY/Idle (2).png" type="Texture" id=47]
-[ext_resource path="res://Assests/BOY/Idle (3).png" type="Texture" id=48]
-[ext_resource path="res://Assests/BOY/Idle (4).png" type="Texture" id=49]
-[ext_resource path="res://Assests/BOY/Idle (5).png" type="Texture" id=50]
-[ext_resource path="res://Assests/BOY/Idle (6).png" type="Texture" id=51]
-[ext_resource path="res://Assests/BOY/Idle (7).png" type="Texture" id=52]
-[ext_resource path="res://Assests/BOY/Idle (8).png" type="Texture" id=53]
-[ext_resource path="res://Assests/BOY/Idle (9).png" type="Texture" id=54]
-[ext_resource path="res://Assests/BOY/Idle (10).png" type="Texture" id=55]
-[ext_resource path="res://Assests/BOY/Idle (11).png" type="Texture" id=56]
-[ext_resource path="res://Assests/BOY/Idle (12).png" type="Texture" id=57]
-[ext_resource path="res://Assests/BOY/Idle (13).png" type="Texture" id=58]
-[ext_resource path="res://Assests/BOY/Idle (14).png" type="Texture" id=59]
-[ext_resource path="res://Assests/BOY/Idle (15).png" type="Texture" id=60]
+[ext_resource path="res://Assests/BOY/Jump (1).png" type="Texture" id=46]
+[ext_resource path="res://Assests/BOY/Jump (2).png" type="Texture" id=47]
+[ext_resource path="res://Assests/BOY/Jump (3).png" type="Texture" id=48]
+[ext_resource path="res://Assests/BOY/Jump (4).png" type="Texture" id=49]
+[ext_resource path="res://Assests/BOY/Jump (5).png" type="Texture" id=50]
+[ext_resource path="res://Assests/BOY/Jump (6).png" type="Texture" id=51]
+[ext_resource path="res://Assests/BOY/Jump (7).png" type="Texture" id=52]
+[ext_resource path="res://Assests/BOY/Jump (8).png" type="Texture" id=53]
+[ext_resource path="res://Assests/BOY/Jump (9).png" type="Texture" id=54]
+[ext_resource path="res://Assests/BOY/Jump (10).png" type="Texture" id=55]
+[ext_resource path="res://Assests/BOY/Jump (11).png" type="Texture" id=56]
+[ext_resource path="res://Assests/BOY/Jump (12).png" type="Texture" id=57]
+[ext_resource path="res://Assests/BOY/Jump (13).png" type="Texture" id=58]
+[ext_resource path="res://Assests/BOY/Jump (14).png" type="Texture" id=59]
+[ext_resource path="res://Assests/BOY/Jump (15).png" type="Texture" id=60]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "Run",
-"speed": 50.0
+"speed": 40.0
 }, {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
 "loop": true,
-"name": "Jump",
-"speed": 5.0
+"name": "Ide",
+"speed": 40.0
 }, {
 "frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ],
 "loop": true,
 "name": "Dead",
-"speed": 5.0
+"speed": 40.0
 }, {
 "frames": [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
 "loop": true,
-"name": "Ide",
-"speed": 5.0
+"name": "Jump",
+"speed": 40.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 25.5964
-height = 97.9133
+radius = 33.3974
+height = 67.8419
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 13.1913, 1.83536 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 33.6479
+height = 60.6805
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 219.634, 76.5825 )
+position = Vector2( 38.4042, 34.5349 )
 input_pickable = true
 collision_layer = 2
 collision_mask = 3
 script = ExtResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
-position = Vector2( -124.999, 370.508 )
+position = Vector2( 99.5894, 404.464 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
-animation = "Run"
-frame = 10
+animation = "Dead"
+frame = 8
+playing = true
 
 [node name="Shape" type="CollisionShape2D" parent="."]
-position = Vector2( -127.51, 363.293 )
+position = Vector2( 109.239, 407.184 )
 shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -219.425, -75.164 )
+position = Vector2( -43.0007, -27.5718 )
 anchor_mode = 0
 rotating = true
 current = true
+
+[node name="Pes" type="Area2D" parent="."]
+editor/display_folded = true
+position = Vector2( 108.789, 471.776 )
+collision_layer = 4
+collision_mask = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shape" type="CollisionShape2D" parent="Pes"]
+shape = SubResource( 3 )
+
+[node name="Dano" type="Area2D" parent="."]
+position = Vector2( 109.229, 406.802 )
+collision_layer = 4
+collision_mask = 4
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shape" type="CollisionShape2D" parent="Dano"]
+shape = SubResource( 4 )
+[connection signal="body_entered" from="Pes" to="." method="_on_Pes_body_entered"]
+[connection signal="body_entered" from="Dano" to="." method="_on_Dano_body_entered"]

@@ -6,6 +6,10 @@ const SPEED = 300
 const JUMP_FORCE = -550
 var motion = Vector2()
 
+func _ready():
+	Game.connect("lifes_changed", self, "on_lifes_change")
+	pass
+
 func _physics_process(delta):
 	motion.y += GRAVITY
 	
@@ -30,3 +34,17 @@ func _physics_process(delta):
 		$Sprite.play("Jump") 
 	
 	motion = move_and_slide(motion, UP)
+
+func _on_Pes_body_entered(body):
+	body.dano()
+	motion.y = JUMP_FORCE
+
+func on_lifes_change():
+	update()
+	pass
+
+func _on_Dano_body_entered(body):
+	Game.lifes -= 1
+	print(Game.lifes)
+	if Game.lifes == 0:
+		$".".queue_free()

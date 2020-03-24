@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/virus1.png-a35e47bb08c782e4b30b8a5d2b2aa327.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Assests/VIRUS/virus1.png"
+dest_files=[ "res://.import/virus1.png-a35e47bb08c782e4b30b8a5d2b2aa327.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

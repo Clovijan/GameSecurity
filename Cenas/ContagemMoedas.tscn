@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/ContagemMoedas.gd" type="Script" id=1]
+[ext_resource path="res://Assests/MOEDAS/Moeda_01.png" type="Texture" id=2]
+[ext_resource path="res://Assests/FONTE/Open 24 Display St.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 3 )
+
+[node name="ContagemMoedas" type="CanvasLayer"]
+editor/display_folded = true
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 900.634, 30.8277 )
+scale = Vector2( 0.025, 0.025 )
+texture = ExtResource( 2 )
+
+[node name="ContMoeda" type="Label" parent="."]
+margin_left = 941.22
+margin_top = -3.83003
+margin_right = 990.22
+margin_bottom = 55.17
+custom_fonts/font = SubResource( 1 )
+text = "10"
