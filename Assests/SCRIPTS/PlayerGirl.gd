@@ -8,6 +8,7 @@ var motion = Vector2()
 
 func _ready():
 	Game.connect("lifes_changed", self, "on_lifes_change")
+	$SoundGame.play()
 	pass
 
 func _physics_process(delta):
@@ -30,8 +31,10 @@ func _physics_process(delta):
 	if is_on_floor():
 		if Input.is_action_pressed("ui_up"):
 			motion.y = JUMP_FORCE
+			$SoundJump.play()
+
 	else:
-		$Sprite.play("Jump") 
+		$Sprite.play("Jump")
 	
 	motion = move_and_slide(motion, UP)
 
@@ -45,6 +48,9 @@ func on_lifes_change():
 
 func _on_Dano_body_entered(body):
 	Game.lifes -= 1
-	print(Game.lifes)
 	if Game.lifes == 0:
-		$".".queue_free()
+		$Sprite.play("Dead")
+		get_tree().paused = true
+		$SoundGame.stop()
+		get_tree().change_scene("res://Cenas/TelaGameOver.tscn")
+		

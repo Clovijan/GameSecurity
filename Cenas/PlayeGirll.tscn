@@ -1,123 +1,125 @@
-[gd_scene load_steps=102 format=2]
+[gd_scene load_steps=104 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/PlayerGirl.gd" type="Script" id=1]
-[ext_resource path="res://Assests/GIRL/Run (1).png" type="Texture" id=2]
-[ext_resource path="res://Assests/GIRL/Run (2).png" type="Texture" id=3]
-[ext_resource path="res://Assests/GIRL/Run (3).png" type="Texture" id=4]
-[ext_resource path="res://Assests/GIRL/Run (4).png" type="Texture" id=5]
-[ext_resource path="res://Assests/GIRL/Run (5).png" type="Texture" id=6]
-[ext_resource path="res://Assests/GIRL/Run (6).png" type="Texture" id=7]
-[ext_resource path="res://Assests/GIRL/Run (7).png" type="Texture" id=8]
-[ext_resource path="res://Assests/GIRL/Run (8).png" type="Texture" id=9]
-[ext_resource path="res://Assests/GIRL/Run (9).png" type="Texture" id=10]
-[ext_resource path="res://Assests/GIRL/Run (10).png" type="Texture" id=11]
-[ext_resource path="res://Assests/GIRL/Run (11).png" type="Texture" id=12]
-[ext_resource path="res://Assests/GIRL/Run (12).png" type="Texture" id=13]
-[ext_resource path="res://Assests/GIRL/Run (13).png" type="Texture" id=14]
-[ext_resource path="res://Assests/GIRL/Run (14).png" type="Texture" id=15]
-[ext_resource path="res://Assests/GIRL/Run (15).png" type="Texture" id=16]
-[ext_resource path="res://Assests/GIRL/Run (16).png" type="Texture" id=17]
-[ext_resource path="res://Assests/GIRL/Run (17).png" type="Texture" id=18]
-[ext_resource path="res://Assests/GIRL/Run (18).png" type="Texture" id=19]
-[ext_resource path="res://Assests/GIRL/Run (19).png" type="Texture" id=20]
-[ext_resource path="res://Assests/GIRL/Run (20).png" type="Texture" id=21]
-[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=22]
-[ext_resource path="res://Assests/GIRL/Idle (2).png" type="Texture" id=23]
-[ext_resource path="res://Assests/GIRL/Idle (3).png" type="Texture" id=24]
-[ext_resource path="res://Assests/GIRL/Idle (4).png" type="Texture" id=25]
-[ext_resource path="res://Assests/GIRL/Idle (5).png" type="Texture" id=26]
-[ext_resource path="res://Assests/GIRL/Idle (6).png" type="Texture" id=27]
-[ext_resource path="res://Assests/GIRL/Idle (7).png" type="Texture" id=28]
-[ext_resource path="res://Assests/GIRL/Idle (8).png" type="Texture" id=29]
-[ext_resource path="res://Assests/GIRL/Idle (9).png" type="Texture" id=30]
-[ext_resource path="res://Assests/GIRL/Idle (10).png" type="Texture" id=31]
-[ext_resource path="res://Assests/GIRL/Idle (11).png" type="Texture" id=32]
-[ext_resource path="res://Assests/GIRL/Idle (12).png" type="Texture" id=33]
-[ext_resource path="res://Assests/GIRL/Idle (13).png" type="Texture" id=34]
-[ext_resource path="res://Assests/GIRL/Idle (14).png" type="Texture" id=35]
-[ext_resource path="res://Assests/GIRL/Idle (15).png" type="Texture" id=36]
-[ext_resource path="res://Assests/GIRL/Idle (16).png" type="Texture" id=37]
-[ext_resource path="res://Assests/GIRL/Dead (1).png" type="Texture" id=38]
-[ext_resource path="res://Assests/GIRL/Dead (2).png" type="Texture" id=39]
-[ext_resource path="res://Assests/GIRL/Dead (3).png" type="Texture" id=40]
-[ext_resource path="res://Assests/GIRL/Dead (4).png" type="Texture" id=41]
-[ext_resource path="res://Assests/GIRL/Dead (5).png" type="Texture" id=42]
-[ext_resource path="res://Assests/GIRL/Dead (6).png" type="Texture" id=43]
-[ext_resource path="res://Assests/GIRL/Dead (7).png" type="Texture" id=44]
-[ext_resource path="res://Assests/GIRL/Dead (8).png" type="Texture" id=45]
-[ext_resource path="res://Assests/GIRL/Dead (9).png" type="Texture" id=46]
-[ext_resource path="res://Assests/GIRL/Dead (10).png" type="Texture" id=47]
-[ext_resource path="res://Assests/GIRL/Dead (11).png" type="Texture" id=48]
-[ext_resource path="res://Assests/GIRL/Dead (12).png" type="Texture" id=49]
-[ext_resource path="res://Assests/GIRL/Dead (13).png" type="Texture" id=50]
-[ext_resource path="res://Assests/GIRL/Dead (14).png" type="Texture" id=51]
-[ext_resource path="res://Assests/GIRL/Dead (15).png" type="Texture" id=52]
-[ext_resource path="res://Assests/GIRL/Dead (16).png" type="Texture" id=53]
-[ext_resource path="res://Assests/GIRL/Dead (17).png" type="Texture" id=54]
-[ext_resource path="res://Assests/GIRL/Dead (18).png" type="Texture" id=55]
-[ext_resource path="res://Assests/GIRL/Dead (19).png" type="Texture" id=56]
-[ext_resource path="res://Assests/GIRL/Dead (20).png" type="Texture" id=57]
-[ext_resource path="res://Assests/GIRL/Dead (21).png" type="Texture" id=58]
-[ext_resource path="res://Assests/GIRL/Dead (22).png" type="Texture" id=59]
-[ext_resource path="res://Assests/GIRL/Dead (23).png" type="Texture" id=60]
-[ext_resource path="res://Assests/GIRL/Dead (24).png" type="Texture" id=61]
-[ext_resource path="res://Assests/GIRL/Dead (25).png" type="Texture" id=62]
-[ext_resource path="res://Assests/GIRL/Dead (26).png" type="Texture" id=63]
-[ext_resource path="res://Assests/GIRL/Dead (27).png" type="Texture" id=64]
-[ext_resource path="res://Assests/GIRL/Dead (28).png" type="Texture" id=65]
-[ext_resource path="res://Assests/GIRL/Dead (29).png" type="Texture" id=66]
-[ext_resource path="res://Assests/GIRL/Dead (30).png" type="Texture" id=67]
-[ext_resource path="res://Assests/GIRL/Jump (1).png" type="Texture" id=68]
-[ext_resource path="res://Assests/GIRL/Jump (2).png" type="Texture" id=69]
-[ext_resource path="res://Assests/GIRL/Jump (3).png" type="Texture" id=70]
-[ext_resource path="res://Assests/GIRL/Jump (4).png" type="Texture" id=71]
-[ext_resource path="res://Assests/GIRL/Jump (5).png" type="Texture" id=72]
-[ext_resource path="res://Assests/GIRL/Jump (6).png" type="Texture" id=73]
-[ext_resource path="res://Assests/GIRL/Jump (7).png" type="Texture" id=74]
-[ext_resource path="res://Assests/GIRL/Jump (8).png" type="Texture" id=75]
-[ext_resource path="res://Assests/GIRL/Jump (9).png" type="Texture" id=76]
-[ext_resource path="res://Assests/GIRL/Jump (10).png" type="Texture" id=77]
-[ext_resource path="res://Assests/GIRL/Jump (11).png" type="Texture" id=78]
-[ext_resource path="res://Assests/GIRL/Jump (12).png" type="Texture" id=79]
-[ext_resource path="res://Assests/GIRL/Jump (13).png" type="Texture" id=80]
-[ext_resource path="res://Assests/GIRL/Jump (14).png" type="Texture" id=81]
-[ext_resource path="res://Assests/GIRL/Jump (15).png" type="Texture" id=82]
-[ext_resource path="res://Assests/GIRL/Jump (16).png" type="Texture" id=83]
-[ext_resource path="res://Assests/GIRL/Jump (17).png" type="Texture" id=84]
-[ext_resource path="res://Assests/GIRL/Jump (18).png" type="Texture" id=85]
-[ext_resource path="res://Assests/GIRL/Jump (19).png" type="Texture" id=86]
-[ext_resource path="res://Assests/GIRL/Jump (20).png" type="Texture" id=87]
-[ext_resource path="res://Assests/GIRL/Jump (21).png" type="Texture" id=88]
-[ext_resource path="res://Assests/GIRL/Jump (22).png" type="Texture" id=89]
-[ext_resource path="res://Assests/GIRL/Jump (23).png" type="Texture" id=90]
-[ext_resource path="res://Assests/GIRL/Jump (24).png" type="Texture" id=91]
-[ext_resource path="res://Assests/GIRL/Jump (25).png" type="Texture" id=92]
-[ext_resource path="res://Assests/GIRL/Jump (26).png" type="Texture" id=93]
-[ext_resource path="res://Assests/GIRL/Jump (27).png" type="Texture" id=94]
-[ext_resource path="res://Assests/GIRL/Jump (28).png" type="Texture" id=95]
-[ext_resource path="res://Assests/GIRL/Jump (29).png" type="Texture" id=96]
-[ext_resource path="res://Assests/GIRL/Jump (30).png" type="Texture" id=97]
+[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=2]
+[ext_resource path="res://Assests/GIRL/Idle (2).png" type="Texture" id=3]
+[ext_resource path="res://Assests/GIRL/Idle (3).png" type="Texture" id=4]
+[ext_resource path="res://Assests/GIRL/Idle (4).png" type="Texture" id=5]
+[ext_resource path="res://Assests/GIRL/Idle (5).png" type="Texture" id=6]
+[ext_resource path="res://Assests/GIRL/Idle (6).png" type="Texture" id=7]
+[ext_resource path="res://Assests/GIRL/Idle (7).png" type="Texture" id=8]
+[ext_resource path="res://Assests/GIRL/Idle (8).png" type="Texture" id=9]
+[ext_resource path="res://Assests/GIRL/Idle (9).png" type="Texture" id=10]
+[ext_resource path="res://Assests/GIRL/Idle (10).png" type="Texture" id=11]
+[ext_resource path="res://Assests/GIRL/Idle (11).png" type="Texture" id=12]
+[ext_resource path="res://Assests/GIRL/Idle (12).png" type="Texture" id=13]
+[ext_resource path="res://Assests/GIRL/Idle (13).png" type="Texture" id=14]
+[ext_resource path="res://Assests/GIRL/Idle (14).png" type="Texture" id=15]
+[ext_resource path="res://Assests/GIRL/Idle (15).png" type="Texture" id=16]
+[ext_resource path="res://Assests/GIRL/Idle (16).png" type="Texture" id=17]
+[ext_resource path="res://Assests/GIRL/Jump (1).png" type="Texture" id=18]
+[ext_resource path="res://Assests/GIRL/Jump (2).png" type="Texture" id=19]
+[ext_resource path="res://Assests/GIRL/Jump (3).png" type="Texture" id=20]
+[ext_resource path="res://Assests/GIRL/Jump (4).png" type="Texture" id=21]
+[ext_resource path="res://Assests/GIRL/Jump (5).png" type="Texture" id=22]
+[ext_resource path="res://Assests/GIRL/Jump (6).png" type="Texture" id=23]
+[ext_resource path="res://Assests/GIRL/Jump (7).png" type="Texture" id=24]
+[ext_resource path="res://Assests/GIRL/Jump (8).png" type="Texture" id=25]
+[ext_resource path="res://Assests/GIRL/Jump (9).png" type="Texture" id=26]
+[ext_resource path="res://Assests/GIRL/Jump (10).png" type="Texture" id=27]
+[ext_resource path="res://Assests/GIRL/Jump (11).png" type="Texture" id=28]
+[ext_resource path="res://Assests/GIRL/Jump (12).png" type="Texture" id=29]
+[ext_resource path="res://Assests/GIRL/Jump (13).png" type="Texture" id=30]
+[ext_resource path="res://Assests/GIRL/Jump (14).png" type="Texture" id=31]
+[ext_resource path="res://Assests/GIRL/Jump (15).png" type="Texture" id=32]
+[ext_resource path="res://Assests/GIRL/Jump (16).png" type="Texture" id=33]
+[ext_resource path="res://Assests/GIRL/Jump (17).png" type="Texture" id=34]
+[ext_resource path="res://Assests/GIRL/Jump (18).png" type="Texture" id=35]
+[ext_resource path="res://Assests/GIRL/Jump (19).png" type="Texture" id=36]
+[ext_resource path="res://Assests/GIRL/Jump (20).png" type="Texture" id=37]
+[ext_resource path="res://Assests/GIRL/Jump (21).png" type="Texture" id=38]
+[ext_resource path="res://Assests/GIRL/Jump (22).png" type="Texture" id=39]
+[ext_resource path="res://Assests/GIRL/Jump (23).png" type="Texture" id=40]
+[ext_resource path="res://Assests/GIRL/Jump (24).png" type="Texture" id=41]
+[ext_resource path="res://Assests/GIRL/Jump (25).png" type="Texture" id=42]
+[ext_resource path="res://Assests/GIRL/Jump (26).png" type="Texture" id=43]
+[ext_resource path="res://Assests/GIRL/Jump (27).png" type="Texture" id=44]
+[ext_resource path="res://Assests/GIRL/Jump (28).png" type="Texture" id=45]
+[ext_resource path="res://Assests/GIRL/Jump (29).png" type="Texture" id=46]
+[ext_resource path="res://Assests/GIRL/Jump (30).png" type="Texture" id=47]
+[ext_resource path="res://Assests/GIRL/Run (1).png" type="Texture" id=48]
+[ext_resource path="res://Assests/GIRL/Run (2).png" type="Texture" id=49]
+[ext_resource path="res://Assests/GIRL/Run (3).png" type="Texture" id=50]
+[ext_resource path="res://Assests/GIRL/Run (4).png" type="Texture" id=51]
+[ext_resource path="res://Assests/GIRL/Run (5).png" type="Texture" id=52]
+[ext_resource path="res://Assests/GIRL/Run (6).png" type="Texture" id=53]
+[ext_resource path="res://Assests/GIRL/Run (7).png" type="Texture" id=54]
+[ext_resource path="res://Assests/GIRL/Run (8).png" type="Texture" id=55]
+[ext_resource path="res://Assests/GIRL/Run (9).png" type="Texture" id=56]
+[ext_resource path="res://Assests/GIRL/Run (10).png" type="Texture" id=57]
+[ext_resource path="res://Assests/GIRL/Run (11).png" type="Texture" id=58]
+[ext_resource path="res://Assests/GIRL/Run (12).png" type="Texture" id=59]
+[ext_resource path="res://Assests/GIRL/Run (13).png" type="Texture" id=60]
+[ext_resource path="res://Assests/GIRL/Run (14).png" type="Texture" id=61]
+[ext_resource path="res://Assests/GIRL/Run (15).png" type="Texture" id=62]
+[ext_resource path="res://Assests/GIRL/Run (16).png" type="Texture" id=63]
+[ext_resource path="res://Assests/GIRL/Run (17).png" type="Texture" id=64]
+[ext_resource path="res://Assests/GIRL/Run (18).png" type="Texture" id=65]
+[ext_resource path="res://Assests/GIRL/Run (19).png" type="Texture" id=66]
+[ext_resource path="res://Assests/GIRL/Run (20).png" type="Texture" id=67]
+[ext_resource path="res://Assests/GIRL/Dead (1).png" type="Texture" id=68]
+[ext_resource path="res://Assests/GIRL/Dead (2).png" type="Texture" id=69]
+[ext_resource path="res://Assests/GIRL/Dead (3).png" type="Texture" id=70]
+[ext_resource path="res://Assests/GIRL/Dead (4).png" type="Texture" id=71]
+[ext_resource path="res://Assests/GIRL/Dead (5).png" type="Texture" id=72]
+[ext_resource path="res://Assests/GIRL/Dead (6).png" type="Texture" id=73]
+[ext_resource path="res://Assests/GIRL/Dead (7).png" type="Texture" id=74]
+[ext_resource path="res://Assests/GIRL/Dead (8).png" type="Texture" id=75]
+[ext_resource path="res://Assests/GIRL/Dead (9).png" type="Texture" id=76]
+[ext_resource path="res://Assests/GIRL/Dead (10).png" type="Texture" id=77]
+[ext_resource path="res://Assests/GIRL/Dead (11).png" type="Texture" id=78]
+[ext_resource path="res://Assests/GIRL/Dead (12).png" type="Texture" id=79]
+[ext_resource path="res://Assests/GIRL/Dead (13).png" type="Texture" id=80]
+[ext_resource path="res://Assests/GIRL/Dead (14).png" type="Texture" id=81]
+[ext_resource path="res://Assests/GIRL/Dead (15).png" type="Texture" id=82]
+[ext_resource path="res://Assests/GIRL/Dead (16).png" type="Texture" id=83]
+[ext_resource path="res://Assests/GIRL/Dead (17).png" type="Texture" id=84]
+[ext_resource path="res://Assests/GIRL/Dead (18).png" type="Texture" id=85]
+[ext_resource path="res://Assests/GIRL/Dead (19).png" type="Texture" id=86]
+[ext_resource path="res://Assests/GIRL/Dead (20).png" type="Texture" id=87]
+[ext_resource path="res://Assests/GIRL/Dead (21).png" type="Texture" id=88]
+[ext_resource path="res://Assests/GIRL/Dead (22).png" type="Texture" id=89]
+[ext_resource path="res://Assests/GIRL/Dead (23).png" type="Texture" id=90]
+[ext_resource path="res://Assests/GIRL/Dead (24).png" type="Texture" id=91]
+[ext_resource path="res://Assests/GIRL/Dead (25).png" type="Texture" id=92]
+[ext_resource path="res://Assests/GIRL/Dead (26).png" type="Texture" id=93]
+[ext_resource path="res://Assests/GIRL/Dead (27).png" type="Texture" id=94]
+[ext_resource path="res://Assests/GIRL/Dead (28).png" type="Texture" id=95]
+[ext_resource path="res://Assests/GIRL/Dead (29).png" type="Texture" id=96]
+[ext_resource path="res://Assests/GIRL/Dead (30).png" type="Texture" id=97]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=98]
+[ext_resource path="res://Assests/SONS/Sound Way MSX.wav" type="AudioStream" id=99]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "Run",
-"speed": 80.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "Ide",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ],
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ) ],
 "loop": true,
-"name": "Dead",
-"speed": 40.0
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ],
+"loop": true,
+"name": "Run",
+"speed": 80.0
 }, {
 "frames": [ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ) ],
 "loop": true,
-"name": "Jump",
+"name": "Dead",
 "speed": 5.0
 } ]
 
@@ -126,11 +128,11 @@ radius = 29.1022
 height = 67.8419
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 13.1913, 1.83536 )
+extents = Vector2( 15.8118, 1.83536 )
 
 [sub_resource type="CapsuleShape2D" id=4]
-radius = 33.6479
-height = 60.6805
+radius = 36.7544
+height = 35.6435
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 38.4042, 34.5349 )
@@ -144,8 +146,7 @@ position = Vector2( 99.5894, 404.464 )
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 1 )
 animation = "Dead"
-frame = 14
-playing = true
+frame = 10
 
 [node name="Shape" type="CollisionShape2D" parent="."]
 position = Vector2( 109.239, 407.184 )
@@ -158,7 +159,6 @@ rotating = true
 current = true
 
 [node name="Pes" type="Area2D" parent="."]
-editor/display_folded = true
 position = Vector2( 108.789, 471.776 )
 collision_layer = 4
 collision_mask = 4
@@ -179,5 +179,13 @@ __meta__ = {
 
 [node name="Shape" type="CollisionShape2D" parent="Dano"]
 shape = SubResource( 4 )
+
+[node name="SoundJump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 98 )
+volume_db = -3.688
+
+[node name="SoundGame" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 99 )
+volume_db = -14.752
 [connection signal="body_entered" from="Pes" to="." method="_on_Pes_body_entered"]
 [connection signal="body_entered" from="Dano" to="." method="_on_Dano_body_entered"]

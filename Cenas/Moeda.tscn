@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Moeda.gd" type="Script" id=1]
 [ext_resource path="res://Assests/MOEDAS/Moeda_01.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assests/MOEDAS/Moeda_04.png" type="Texture" id=5]
 [ext_resource path="res://Assests/MOEDAS/Moeda_05.png" type="Texture" id=6]
 [ext_resource path="res://Assests/MOEDAS/Moeda_06.png" type="Texture" id=7]
+[ext_resource path="res://Assests/SONS/coin_SFX.wav" type="AudioStream" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -34,4 +35,9 @@ playing = true
 position = Vector2( 34.4767, 33.1227 )
 scale = Vector2( 0.03, 0.03 )
 shape = SubResource( 2 )
+
+[node name="SoundCoin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -18.451
 [connection signal="body_entered" from="." to="." method="_on_Moeda_body_entered"]
+[connection signal="finished" from="SoundCoin" to="." method="_on_SoundCoin_finished"]

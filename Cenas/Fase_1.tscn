@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Fase_1.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TILESET/cenário.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Cenas/Vida.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Cenas/ContagemMoedas.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Cenas/Moeda.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
@@ -80,3 +81,15 @@ editor/display_folded = false
 
 [node name="Inimigo" parent="." instance=ExtResource( 10 )]
 position = Vector2( 648.6, 477.948 )
+
+[node name="Inimigo2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1252.49, 474.052 )
+
+[node name="Moeda" parent="." instance=ExtResource( 11 )]
+position = Vector2( 265.91, 443.881 )
+
+[node name="Moeda2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 924.341, 428.297 )
+
+[node name="Moeda3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1649, 432.193 )

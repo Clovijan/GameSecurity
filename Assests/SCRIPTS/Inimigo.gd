@@ -28,6 +28,7 @@ func _process(delta):
 
 func dano():
 	get_node("Anime").play("Die")
+	$SoundDead.play()
 	
 func die():
 	$".".queue_free()
