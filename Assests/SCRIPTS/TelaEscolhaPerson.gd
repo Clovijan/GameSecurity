@@ -1,17 +1,20 @@
 extends Control
 
 func _ready():
+	$SoundMusic.play()
 	pass # Replace with function body.
 
 
 
 func _on_BtnGirl_pressed():
-	get_tree().change_scene("res://Cenas/Fase_1.tscn")
+	$SoundClick.play()
 	Game.person = 1
+	get_tree().change_scene("res://Cenas/Fase_1.tscn")
 	pass # Replace with function body.
 
 
 func _on_BtnBoy_pressed():
-	get_tree().change_scene("res://Cenas/Fase_1.tscn")
+	$SoundClick.play()
 	Game.person = 2
+	get_tree().change_scene("res://Cenas/Fase_1.tscn")
 	pass # Replace with function body.

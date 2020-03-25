@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TELA HOME/TELA INICIAL DO JOGO.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assests/SONS/Summer_Park.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -14,7 +16,6 @@ size = 53
 font_data = ExtResource( 3 )
 
 [node name="Menu" type="Control"]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1.0
@@ -28,6 +29,7 @@ texture = ExtResource( 2 )
 expand = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -2.05054
@@ -70,5 +72,11 @@ margin_right = 807.0
 margin_bottom = 300.0
 custom_fonts/font = SubResource( 2 )
 text = "Quit"
+
+[node name="SoundMenu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="SoundClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
 [connection signal="pressed" from="CenterContainer/VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/BtnQuit" to="." method="_on_BtnQuit_pressed"]

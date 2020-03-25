@@ -1,22 +1,15 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Fase_1.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TILESET/cenário.png" type="Texture" id=2]
 [ext_resource path="res://Assests/TILESMAP/plataforma.tres" type="TileSet" id=3]
-[ext_resource path="res://Cenas/Tip.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Assests/FONTE/Open 24 Display St.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://Assests/SCRIPTS/Label.gd" type="Script" id=6]
-[ext_resource path="res://Cenas/TipContent.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Cenas/Vida.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Cenas/ContagemMoedas.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Cenas/Pause.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Cenas/Vida.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Cenas/ContagemMoedas.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Cenas/Pause.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Cenas/Dica.tscn" type="PackedScene" id=8]
 
-[sub_resource type="DynamicFont" id=1]
-size = 32
-font_data = ExtResource( 5 )
-
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6.89301, 247.378 )
 
 [node name="ContainerWorld" type="Control"]
@@ -40,54 +33,35 @@ centered = false
 [node name="BlocosShape" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 format = 1
-tile_data = PoolIntArray( 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 536870912, 0, 524323, 536870912, 0, 524324, 536870912, 0, 524325, 536870912, 0, 524326, 536870912, 0, 524327, 536870912, 0, 524328, 536870912, 0, 524329, 536870912, 0, 524330, 536870912, 0, 524331, 536870912, 0, 524332, 536870912, 0, 524333, 536870912, 0, 524334, 536870912, 0, 524335, 536870912, 0, 524336, 536870912, 0, 524337, 536870912, 0, 524338, 536870912, 0, 524339, 536870912, 0, 524340, 536870912, 0, 524341, 536870912, 0, 524342, 536870912, 0, 524343, 536870912, 0 )
-
-[node name="TipContainer" type="Node" parent="."]
-editor/display_folded = true
-
-[node name="Tip" parent="TipContainer" instance=ExtResource( 4 )]
-editor/display_folded = true
-position = Vector2( 599.275, 170.041 )
-scale = Vector2( 9.68304, 7.2684 )
-width = 67
-height = 50
-
-[node name="Label" type="Label" parent="TipContainer/Tip"]
-visible = false
-margin_left = -24.0
-margin_top = -6.0
-margin_right = 469.0
-margin_bottom = 315.0
-rect_scale = Vector2( 0.1, 0.1 )
-custom_fonts/font = SubResource( 1 )
-text = "Olá sou a MATilDa preciso da sua ajuda para poder livrar meu pc de alguns virus voce tera que desvendar a maior parte das coisas para que se consiga  ativar o antivirus "
-autowrap = true
-script = ExtResource( 6 )
-
-[node name="TipContent" parent="TipContainer/Tip" instance=ExtResource( 7 )]
-position = Vector2( 0.266941, 3.02269 )
+tile_data = PoolIntArray( 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 536870912, 0, 524323, 536870912, 0, 524324, 536870912, 0, 524325, 536870912, 0, 524326, 536870912, 0, 524327, 536870912, 0, 524328, 536870912, 0, 524329, 536870912, 0, 524330, 536870912, 0, 524331, 536870912, 0, 524332, 536870912, 0, 524333, 536870912, 0, 524334, 536870912, 0, 524335, 536870912, 0, 524336, 536870912, 0, 524337, 536870912, 0, 524338, 536870912, 0, 524339, 536870912, 0, 524340, 536870912, 0, 524341, 536870912, 0, 524342, 536870912, 0, 524343, 536870912, 0, 786462, 0, 0, 851997, 0, 0, 851998, 0, 0, 917534, 0, 0, 983063, 0, 0, 983064, 0, 0, 983065, 0, 0, 983066, 0, 0, 983067, 0, 0, 983070, 0, 0, 1048603, 0, 0, 1048604, 0, 0, 1048605, 0, 0, 1048606, 0, 0 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 48.5348, 256.041 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
-[node name="ContagemVidas" parent="." instance=ExtResource( 8 )]
+[node name="ContagemVidas" parent="." instance=ExtResource( 4 )]
 editor/display_folded = false
 
-[node name="ContagemMoedas" parent="." instance=ExtResource( 9 )]
+[node name="ContagemMoedas" parent="." instance=ExtResource( 5 )]
 
-[node name="Pause" parent="." instance=ExtResource( 10 )]
+[node name="Pause" parent="." instance=ExtResource( 6 )]
 
 [node name="Inimigo" type="Node" parent="."]
+editor/display_folded = true
 
-[node name="Inimigo" parent="Inimigo" instance=ExtResource( 11 )]
-position = Vector2( 1309.12, 453.207 )
+[node name="Inimigo" parent="Inimigo" instance=ExtResource( 7 )]
+position = Vector2( 838.461, 466.064 )
 
-[node name="Inimigo2" parent="Inimigo" instance=ExtResource( 11 )]
+[node name="Inimigo2" parent="Inimigo" instance=ExtResource( 7 )]
 position = Vector2( 1660.74, 463.756 )
 
-[node name="Inimigo3" parent="Inimigo" instance=ExtResource( 11 )]
+[node name="Inimigo3" parent="Inimigo" instance=ExtResource( 7 )]
 position = Vector2( 2054.55, 460.24 )
+
+[node name="Dica" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1178.41, 214.155 )
+height = 300
+texto = "Ola mundo o que vc pode fazer depois de colocar muitas coisas "

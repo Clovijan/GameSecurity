@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/Dica.gd" type="Script" id=1]
+[ext_resource path="res://Cenas/Balao/Balao.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 55.1941, 61.8511 )
+
+[node name="Dica" type="Area2D"]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+width = 700
+height = 400
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -340.391, 235.813 )
+shape = SubResource( 1 )
+
+[node name="Balao" parent="." instance=ExtResource( 2 )]
+width = 700
+height = 400
+
+[node name="Tween" type="Tween" parent="."]
+[connection signal="body_entered" from="." to="." method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_Dica_body_exited"]

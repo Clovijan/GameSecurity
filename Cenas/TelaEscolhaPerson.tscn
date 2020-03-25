@@ -1,14 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/TelaEscolhaPerson.gd" type="Script" id=1]
-[ext_resource path="res://Assests/TELA HOME/TELA INICIAL DO JOGO.jpg" type="Texture" id=2]
+[ext_resource path="res://Assests/TELA HOME/FundoEscuro2.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=4]
-[ext_resource path="res://Assests/BOY/Idle (1).png" type="Texture" id=5]
+[ext_resource path="res://Assests/BOY/Idle (1).png" type="Texture" id=4]
+[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=5]
+[ext_resource path="res://Assests/SONS/Summer_Park.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
-outline_color = Color( 0.609375, 0.083313, 0.083313, 1 )
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -28,54 +29,40 @@ anchor_bottom = 1.0
 texture = ExtResource( 2 )
 expand = true
 
-[node name="CenterContainer" type="Control" parent="."]
-anchor_right = 1.0
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
-
-[node name="Label" type="Label" parent="CenterContainer"]
-modulate = Color( 0.992157, 0.980392, 0.980392, 1 )
-margin_left = 289.073
-margin_top = 39.0309
-margin_right = 777.073
-margin_bottom = 129.031
+margin_left = -244.0
+margin_top = 65.0
+margin_right = 244.0
 custom_fonts/font = SubResource( 1 )
-text = "player 1"
+text = "Player 1"
+align = 1
 
-[node name="VBoxContainer" type="HBoxContainer" parent="CenterContainer"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 260.0
-margin_bottom = -241.0
-alignment = 1
-
-[node name="Girl" type="Node2D" parent="CenterContainer/VBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="."]
 editor/display_folded = true
-position = Vector2( 13.5661, 1.50732 )
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -512.0
+margin_top = -600.0
+margin_right = 512.0
+
+[node name="Boy" type="Node2D" parent="CenterContainer"]
+editor/display_folded = true
+position = Vector2( 46.4206, 297.258 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="BtnGirl" type="Button" parent="CenterContainer/VBoxContainer/Girl"]
-margin_left = 125.466
-margin_top = 145.823
-margin_right = 404.466
-margin_bottom = 244.823
-custom_fonts/font = SubResource( 2 )
-text = "chelly"
-
-[node name="Sprite" type="Sprite" parent="CenterContainer/VBoxContainer/Girl/BtnGirl"]
-position = Vector2( 136.69, -115.572 )
+[node name="Sprite" type="Sprite" parent="CenterContainer/Boy"]
+position = Vector2( 767.175, 37.964 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 
-[node name="Boy" type="Node2D" parent="CenterContainer/VBoxContainer"]
-editor/display_folded = true
-position = Vector2( -1.50732, -1.50735 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="BtnBoy" type="Button" parent="CenterContainer/VBoxContainer/Boy"]
+[node name="BtnBoy" type="Button" parent="CenterContainer/Boy"]
 margin_left = 623.977
 margin_top = 149.507
 margin_right = 891.977
@@ -83,9 +70,30 @@ margin_bottom = 248.507
 custom_fonts/font = SubResource( 2 )
 text = "darvin"
 
-[node name="Sprite" type="Sprite" parent="CenterContainer/VBoxContainer/Boy/BtnBoy"]
-position = Vector2( 143.198, -111.543 )
+[node name="Girl" type="Node2D" parent="CenterContainer"]
+editor/display_folded = true
+position = Vector2( -34.976, 298.765 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="CenterContainer/Girl"]
+position = Vector2( 262.156, 30.251 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 5 )
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Girl/BtnGirl" to="." method="_on_BtnGirl_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Boy/BtnBoy" to="." method="_on_BtnBoy_pressed"]
+
+[node name="BtnGirl" type="Button" parent="CenterContainer/Girl"]
+margin_left = 125.466
+margin_top = 145.823
+margin_right = 404.466
+margin_bottom = 244.823
+custom_fonts/font = SubResource( 2 )
+text = "chelly"
+
+[node name="SoundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+
+[node name="SoundClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+[connection signal="pressed" from="CenterContainer/Boy/BtnBoy" to="." method="_on_BtnBoy_pressed"]
+[connection signal="pressed" from="CenterContainer/Girl/BtnGirl" to="." method="_on_BtnGirl_pressed"]
