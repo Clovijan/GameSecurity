@@ -1,19 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assests/TELA HOME/1.jpg" type="Texture" id=1]
-[ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assests/SCRIPTS/TelaGameOver.gd" type="Script" id=1]
+[ext_resource path="res://Assests/TELA HOME/1.jpg" type="Texture" id=2]
+[ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
-font_data = ExtResource( 2 )
+font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 40
-font_data = ExtResource( 2 )
+size = 60
+font_data = ExtResource( 3 )
 
 [node name="TelaGameOver" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_vertical_guides_": [  ]
 }
@@ -21,7 +23,7 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
 expand = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -36,7 +38,7 @@ margin_bottom = 51.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 margin_right = 682.0
-margin_bottom = 152.0
+margin_bottom = 174.0
 
 [node name="Tittulo" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_right = 682.0
@@ -48,7 +50,6 @@ align = 1
 [node name="Score" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_top = 106.0
 margin_right = 682.0
-margin_bottom = 152.0
+margin_bottom = 174.0
 custom_fonts/font = SubResource( 2 )
-text = "Score    0000"
 align = 1

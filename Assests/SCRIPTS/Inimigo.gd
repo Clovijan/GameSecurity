@@ -28,6 +28,7 @@ func _process(delta):
 
 func dano():
 	get_node("Anime").play("Die")
+	Game.score += 10
 	$SoundDead.play()
 	
 func die():

@@ -6,7 +6,8 @@ func _physics_process(delta):
 func _on_Moeda_body_entered(body):
 	if body.name == "Player":
 		$SoundCoin.play()
-		Game.coin -= 1
+		Game.coin += 1
+		Game.score += 20
 	pass # Replace with function body.
 
 
