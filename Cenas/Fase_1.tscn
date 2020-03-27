@@ -12,7 +12,7 @@
 [ext_resource path="res://Cenas/Moeda.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 6.89301, 247.378 )
+extents = Vector2( 3.26179, 247.378 )
 
 [node name="ContainerWorld" type="Control"]
 anchor_right = 1.0
@@ -23,6 +23,7 @@ script = ExtResource( 1 )
 editor/display_folded = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ContainerCenario"]
+editor/display_folded = true
 motion_scale = Vector2( 0.8, 0.8 )
 motion_mirroring = Vector2( 1000, 600 )
 
@@ -33,15 +34,17 @@ texture = ExtResource( 2 )
 centered = false
 
 [node name="BlocosShape" type="TileMap" parent="."]
+position = Vector2( -2, 0 )
+scale = Vector2( 4, 1 )
 tile_set = ExtResource( 3 )
 format = 1
-tile_data = PoolIntArray( 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 536870912, 0, 524323, 536870912, 0, 524324, 536870912, 0, 524325, 536870912, 0, 524326, 536870912, 0, 524327, 536870912, 0, 524328, 536870912, 0, 524329, 536870912, 0, 524330, 536870912, 0, 524331, 536870912, 0, 524332, 536870912, 0, 524333, 536870912, 0, 524334, 536870912, 0, 524335, 536870912, 0, 524336, 536870912, 0, 524337, 536870912, 0, 524338, 536870912, 0, 524339, 536870912, 0, 524340, 536870912, 0, 524341, 536870912, 0, 524342, 536870912, 0, 524343, 536870912, 0, 786462, 0, 0, 851997, 0, 0, 851998, 0, 0, 917534, 0, 0, 983063, 0, 0, 983064, 0, 0, 983065, 0, 0, 983066, 0, 0, 983067, 0, 0, 983070, 0, 0, 1048603, 0, 0, 1048604, 0, 0, 1048605, 0, 0, 1048606, 0, 0 )
+tile_data = PoolIntArray( 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524305, 0, 0, 524306, 0, 0 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 48.5348, 256.041 )
+position = Vector2( 39.5348, 256.041 )
 shape = SubResource( 1 )
 
 [node name="ContagemVidas" parent="." instance=ExtResource( 4 )]
@@ -55,28 +58,30 @@ editor/display_folded = false
 editor/display_folded = true
 
 [node name="Inimigo" parent="Inimigo" instance=ExtResource( 7 )]
-position = Vector2( 838.461, 466.064 )
+position = Vector2( 952.891, 473.99 )
 
 [node name="Inimigo2" parent="Inimigo" instance=ExtResource( 7 )]
 position = Vector2( 1660.74, 463.756 )
 
 [node name="Inimigo3" parent="Inimigo" instance=ExtResource( 7 )]
-position = Vector2( 2054.55, 460.24 )
+position = Vector2( 3839.83, 432.345 )
 
 [node name="Dica" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1178.41, 214.155 )
-height = 300
-texto = "Ola mundo o que vc pode fazer depois de colocar muitas coisas "
+position = Vector2( 641.896, 225.99 )
+width = 600
+height = 250
+texto = "Um virus invadiu o computador e desativou o antivirus, sua missao é coletar moedas elas irao fornecer informacoes sobre o virus para que se possa ativar novamente o antivirus. O computador é um ambiente inexplorado inimigos irao aparecer não deixe de elimina-los!"
 
 [node name="Score" parent="." instance=ExtResource( 9 )]
 
 [node name="Moedas" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Moeda" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1244.06, 429.187 )
 
 [node name="Moeda2" parent="Moedas" instance=ExtResource( 10 )]
-position = Vector2( 1861.74, 426.287 )
+position = Vector2( 4707.04, 443.024 )
 
 [node name="Moeda3" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1119.37, 432.087 )
@@ -85,4 +90,7 @@ position = Vector2( 1119.37, 432.087 )
 position = Vector2( 1339.76, 432.087 )
 
 [node name="Moeda5" parent="Moedas" instance=ExtResource( 10 )]
-position = Vector2( 1441.26, 434.987 )
+position = Vector2( 3377.18, 423.829 )
+
+[node name="Moeda6" parent="Moedas" instance=ExtResource( 10 )]
+position = Vector2( 2248.34, 424.005 )

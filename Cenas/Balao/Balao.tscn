@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assests/SCRIPTS/Balao.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TELA HOME/Balao.png" type="Texture" id=2]
-[ext_resource path="res://Assests/FONTE/Open 24 Display St.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assests/FONTE/Aero.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -16,17 +16,17 @@ __meta__ = {
 }
 
 [node name="Frame" type="NinePatchRect" parent="."]
-margin_left = -350.0
-margin_top = -175.0
-margin_right = 350.0
-margin_bottom = 175.0
+margin_left = -300.0
+margin_top = -150.0
+margin_right = 300.0
+margin_bottom = 150.0
 texture = ExtResource( 2 )
 
 [node name="Mensagem" type="Label" parent="."]
-margin_left = -330.0
-margin_top = -155.0
-margin_right = 330.0
-margin_bottom = 155.0
+margin_left = -280.0
+margin_top = -130.0
+margin_right = 280.0
+margin_bottom = 130.0
 custom_fonts/font = SubResource( 1 )
 align = 1
 autowrap = true

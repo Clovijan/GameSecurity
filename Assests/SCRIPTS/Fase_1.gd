@@ -1,6 +1,6 @@
 extends Control
 
-func _ready():	
+func _ready():
 	if Game.person == 1:
 		var cena = preload("res://Cenas/PlayeGirll.tscn")
 		var node = cena.instance()

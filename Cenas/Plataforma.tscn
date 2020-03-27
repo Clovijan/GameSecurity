@@ -6,11 +6,12 @@
 extents = Vector2( 32.1422, 16.1066 )
 
 [node name="Node2D" type="Node2D"]
+editor/display_folded = true
 scale = Vector2( 2, 1.96 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( -23.9233, -24.2688 )
-scale = Vector2( 0.497852, 0.52216 )
+scale = Vector2( 0.739917, 1.51462 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 384, 0, 64, 32 )
