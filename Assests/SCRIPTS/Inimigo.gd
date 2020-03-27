@@ -3,10 +3,9 @@ extends StaticBody2D
 var flip = true 
 var posicao_inicial
 var posicao_final
-var velocidade = 1
-var distancia = 200
 
 export(int) var comprimento = 200
+export(int) var velocidade = 1
 
 func _ready():
 	$Sprite.play("Ide")
