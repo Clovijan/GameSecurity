@@ -8,6 +8,7 @@ export var texto = "" setget set_text
 export var size = 25 setget set_fontSize
 
 func _ready():
+	
 	pass
 
 func _draw():

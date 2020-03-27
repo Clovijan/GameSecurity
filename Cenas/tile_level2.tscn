@@ -1,0 +1,94 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://sprites/tiles/tile2.png" type="Texture" id=1]
+[ext_resource path="res://sprites/objects/Barrel (2).png" type="Texture" id=2]
+[ext_resource path="res://sprites/objects/DoorLocked.png" type="Texture" id=3]
+[ext_resource path="res://sprites/tiles/tile.png" type="Texture" id=4]
+[ext_resource path="res://sprites/tiles/tile3.png" type="Texture" id=5]
+[ext_resource path="res://sprites/tiles/Tile (13).png" type="Texture" id=6]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 88, 776 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 88, 832 )
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 128, 32 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 16, 7.02371 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 16.4082, 7.13038 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 16.2078, 6.94291 )
+
+[node name="Node" type="Node"]
+
+[node name="barrel" type="Sprite" parent="."]
+position = Vector2( 536, 328 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="barrel"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barrel/StaticBody2D"]
+position = Vector2( 0, -656 )
+shape = SubResource( 2 )
+
+[node name="door" type="Sprite" parent="."]
+position = Vector2( 848, -8 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/StaticBody2D"]
+position = Vector2( 344, -352 )
+shape = SubResource( 3 )
+
+[node name="floor" type="Sprite" parent="."]
+position = Vector2( 0, 384 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor/StaticBody2D"]
+position = Vector2( 128, 32 )
+shape = SubResource( 1 )
+
+[node name="plataforma" type="Sprite" parent="."]
+position = Vector2( 64, -32 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="plataforma"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataforma/StaticBody2D"]
+position = Vector2( 15.7365, 8.89999 )
+shape = SubResource( 4 )
+
+[node name="plataforma2" type="Sprite" parent="."]
+position = Vector2( 73.388, 101.448 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="plataforma2"]
+position = Vector2( -479.783, 81.7031 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataforma2/StaticBody2D"]
+position = Vector2( 494.359, -72.7721 )
+shape = SubResource( 5 )
+
+[node name="plataforma3" type="Sprite" parent="."]
+position = Vector2( -197.036, 45.776 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="plataforma3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="plataforma3/StaticBody2D"]
+position = Vector2( 15.6477, 8.69123 )
+shape = SubResource( 6 )

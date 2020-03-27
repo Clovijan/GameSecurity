@@ -16,11 +16,16 @@ _global_script_class_icons={
 [application]
 
 config/name="GameSecurity"
-run/main_scene="res://Cenas/Menu.tscn"
+run/main_scene="res://Cenas/fase_2.tscn"
 
 [autoload]
 
 Game="*res://Assests/SCRIPTS/Game.gd"
+
+[display]
+
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
 
 [input]
 

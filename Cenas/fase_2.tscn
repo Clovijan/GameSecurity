@@ -1,0 +1,538 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/Dica.gd" type="Script" id=1]
+[ext_resource path="res://Assests/SCRIPTS/backdoor.gd" type="Script" id=2]
+[ext_resource path="res://Assests/SCRIPTS/Fase_1.gd" type="Script" id=3]
+[ext_resource path="res://Assests/SCRIPTS/enemy.gd" type="Script" id=4]
+[ext_resource path="res://Cenas/grass.tres" type="TileSet" id=6]
+[ext_resource path="res://Cenas/grass2.tres" type="TileSet" id=7]
+[ext_resource path="res://Cenas/special_tree.tres" type="TileSet" id=8]
+[ext_resource path="res://Cenas/Balao/Balao.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assests/SPRITES/ENEMIES/spam2.png" type="Texture" id=10]
+[ext_resource path="res://Assests/SPRITES/SCENARIOS/scenario2.png" type="Texture" id=11]
+[ext_resource path="res://Assests/SPRITES/ENEMIES/backdoor.png" type="Texture" id=16]
+[ext_resource path="res://Assests/SPRITES/ENEMIES/spam1.png" type="Texture" id=18]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 217.955, 82.6879 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 16 ) ],
+"loop": false,
+"name": "move",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 45.5029, 37.7769 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "move",
+"speed": 2.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 13.096, 25.059 )
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mundo" type="Node" parent="."]
+
+[node name="grass" type="TileMap" parent="Mundo"]
+tile_set = ExtResource( 6 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 1114112, 1, 0, 1114113, 1, 0, 1114114, 1, 0, 1114115, 1, 0, 1114116, 1, 0, 1114117, 1, 0, 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114123, 1, 0, 1114124, 1, 0, 1114125, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1114132, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1114136, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0, 1114140, 1, 0, 1114141, 1, 0, 1114142, 1, 0, 1114143, 1, 0, 1114144, 1, 0, 1114145, 1, 0, 1114146, 1, 0, 1114147, 1, 0, 1114148, 1, 0, 1114149, 1, 0, 1114150, 1, 0, 1114151, 1, 0, 1114152, 1, 0, 1114153, 1, 0, 1114154, 1, 0, 1114155, 1, 0, 1114156, 1, 0, 1114157, 1, 0, 1114158, 1, 0, 1114159, 1, 0, 1114160, 1, 0, 1114161, 1, 0, 1114162, 1, 0, 1114163, 1, 0, 1114164, 1, 0, 1114165, 1, 0, 1114166, 1, 0, 1114167, 1, 0, 1114168, 1, 0, 1114169, 1, 0, 1114170, 1, 0, 1114171, 1, 0, 1114172, 1, 0, 1114173, 1, 0, 1114174, 1, 0, 1114175, 1, 0, 1114176, 1, 0, 1114177, 1, 0, 1114178, 1, 0, 1114179, 1, 0, 1114180, 1, 0, 1114181, 1, 0, 1114182, 1, 0, 1114183, 1, 0, 1114184, 1, 0, 1114185, 1, 0, 1114186, 1, 0, 1114187, 1, 0, 1114188, 1, 0, 1114189, 1, 0, 1114190, 1, 0, 1114191, 1, 0, 1114192, 1, 0, 1114193, 1, 0, 1114194, 1, 0, 1114195, 1, 0, 1114196, 1, 0, 1114197, 1, 0, 1114198, 1, 0, 1114199, 1, 0, 1114200, 1, 0, 1114201, 1, 0, 1114202, 1, 0, 1114203, 1, 0, 1114204, 1, 0, 1114205, 1, 0, 1114206, 1, 0, 1114207, 1, 0, 1114208, 1, 0, 1114209, 1, 0, 1114210, 1, 0, 1114211, 1, 0, 1114212, 1, 0, 1114213, 1, 0, 1114214, 1, 0, 1114215, 1, 0, 1114216, 1, 0, 1114217, 1, 0, 1114218, 1, 0, 1114219, 1, 0, 1114220, 1, 0, 1114221, 1, 0, 1114222, 1, 0, 1114223, 1, 0, 1114224, 1, 0, 1114225, 1, 0, 1114226, 1, 0, 1114227, 1, 0, 1114228, 1, 0, 1114229, 1, 0, 1114230, 1, 0, 1114231, 1, 0, 1114232, 1, 0, 1114233, 1, 0, 1114234, 1, 0, 1114235, 1, 0, 1114236, 1, 0, 1114237, 2, 0, 1179648, 5, 0, 1179649, 4, 0, 1179650, 4, 0, 1179651, 4, 0, 1179652, 4, 0, 1179653, 4, 0, 1179654, 4, 0, 1179655, 4, 0, 1179656, 4, 0, 1179657, 4, 0, 1179658, 4, 0, 1179659, 4, 0, 1179660, 4, 0, 1179661, 4, 0, 1179662, 4, 0, 1179663, 4, 0, 1179664, 4, 0, 1179665, 4, 0, 1179666, 4, 0, 1179667, 4, 0, 1179668, 4, 0, 1179669, 4, 0, 1179670, 4, 0, 1179671, 4, 0, 1179672, 4, 0, 1179673, 4, 0, 1179674, 4, 0, 1179675, 4, 0, 1179676, 4, 0, 1179677, 4, 0, 1179678, 4, 0, 1179679, 4, 0, 1179680, 4, 0, 1179681, 4, 0, 1179682, 4, 0, 1179683, 4, 0, 1179684, 4, 0, 1179685, 4, 0, 1179686, 4, 0, 1179687, 4, 0, 1179688, 4, 0, 1179689, 4, 0, 1179690, 4, 0, 1179691, 4, 0, 1179692, 4, 0, 1179693, 4, 0, 1179694, 4, 0, 1179695, 4, 0, 1179696, 4, 0, 1179697, 4, 0, 1179698, 4, 0, 1179699, 4, 0, 1179700, 4, 0, 1179701, 4, 0, 1179702, 4, 0, 1179703, 4, 0, 1179704, 4, 0, 1179705, 4, 0, 1179706, 4, 0, 1179707, 4, 0, 1179708, 4, 0, 1179709, 4, 0, 1179710, 4, 0, 1179711, 4, 0, 1179712, 4, 0, 1179713, 4, 0, 1179714, 4, 0, 1179715, 4, 0, 1179716, 4, 0, 1179717, 4, 0, 1179718, 4, 0, 1179719, 4, 0, 1179720, 4, 0, 1179721, 4, 0, 1179722, 4, 0, 1179723, 3, 0, 1179724, 3, 0, 1179725, 3, 0, 1179726, 3, 0, 1179727, 3, 0, 1179728, 3, 0, 1179729, 3, 0, 1179730, 3, 0, 1179731, 3, 0, 1179732, 3, 0, 1179733, 3, 0, 1179734, 3, 0, 1179735, 3, 0, 1179736, 3, 0, 1179737, 3, 0, 1179738, 3, 0, 1179739, 4, 0, 1179740, 5, 0, 1179741, 3, 0, 1179742, 3, 0, 1179743, 3, 0, 1179744, 3, 0, 1179745, 3, 0, 1179746, 3, 0, 1179747, 3, 0, 1179748, 3, 0, 1179749, 3, 0, 1179750, 3, 0, 1179751, 3, 0, 1179752, 4, 0, 1179753, 4, 0, 1179754, 4, 0, 1179755, 4, 0, 1179756, 4, 0, 1179757, 4, 0, 1179758, 4, 0, 1179759, 4, 0, 1179760, 4, 0, 1179761, 4, 0, 1179762, 4, 0, 1179763, 4, 0, 1179764, 4, 0, 1179765, 4, 0, 1179766, 4, 0, 1179767, 4, 0, 1179768, 4, 0, 1179769, 4, 0, 1179770, 4, 0, 1179771, 4, 0, 1179772, 4, 0, 1179773, 5, 0, 1245184, 5, 0, 1245185, 4, 0, 1245186, 4, 0, 1245187, 4, 0, 1245188, 4, 0, 1245189, 4, 0, 1245190, 4, 0, 1245191, 4, 0, 1245192, 4, 0, 1245193, 4, 0, 1245194, 4, 0, 1245195, 4, 0, 1245196, 4, 0, 1245197, 4, 0, 1245198, 4, 0, 1245199, 4, 0, 1245200, 4, 0, 1245201, 4, 0, 1245202, 4, 0, 1245203, 4, 0, 1245204, 4, 0, 1245205, 4, 0, 1245206, 4, 0, 1245207, 4, 0, 1245208, 4, 0, 1245209, 4, 0, 1245210, 4, 0, 1245211, 4, 0, 1245212, 4, 0, 1245213, 4, 0, 1245214, 4, 0, 1245215, 4, 0, 1245216, 4, 0, 1245217, 4, 0, 1245218, 4, 0, 1245219, 4, 0, 1245220, 4, 0, 1245221, 4, 0, 1245222, 4, 0, 1245223, 4, 0, 1245224, 4, 0, 1245225, 4, 0, 1245226, 4, 0, 1245227, 4, 0, 1245228, 4, 0, 1245229, 4, 0, 1245230, 4, 0, 1245231, 4, 0, 1245232, 4, 0, 1245233, 4, 0, 1245234, 4, 0, 1245235, 4, 0, 1245236, 4, 0, 1245237, 4, 0, 1245238, 4, 0, 1245239, 4, 0, 1245240, 4, 0, 1245241, 4, 0, 1245242, 4, 0, 1245243, 4, 0, 1245244, 4, 0, 1245245, 4, 0, 1245246, 4, 0, 1245247, 4, 0, 1245248, 4, 0, 1245249, 4, 0, 1245250, 4, 0, 1245251, 4, 0, 1245252, 4, 0, 1245253, 4, 0, 1245254, 4, 0, 1245255, 4, 0, 1245256, 4, 0, 1245257, 4, 0, 1245258, 4, 0, 1245259, 4, 0, 1245260, 4, 0, 1245261, 4, 0, 1245262, 4, 0, 1245263, 3, 0, 1245264, 3, 0, 1245265, 3, 0, 1245266, 3, 0, 1245267, 3, 0, 1245268, 3, 0, 1245269, 3, 0, 1245270, 3, 0, 1245271, 3, 0, 1245272, 3, 0, 1245273, 3, 0, 1245274, 4, 0, 1245275, 4, 0, 1245276, 5, 0, 1245277, 4, 0, 1245278, 4, 0, 1245279, 4, 0, 1245280, 4, 0, 1245281, 4, 0, 1245282, 4, 0, 1245283, 4, 0, 1245284, 4, 0, 1245285, 4, 0, 1245286, 4, 0, 1245287, 4, 0, 1245288, 4, 0, 1245289, 4, 0, 1245290, 4, 0, 1245291, 4, 0, 1245292, 4, 0, 1245293, 4, 0, 1245294, 4, 0, 1245295, 4, 0, 1245296, 4, 0, 1245297, 4, 0, 1245298, 4, 0, 1245299, 4, 0, 1245300, 4, 0, 1245301, 4, 0, 1245302, 4, 0, 1245303, 4, 0, 1245304, 4, 0, 1245305, 4, 0, 1245306, 4, 0, 1245307, 4, 0, 1245308, 4, 0, 1245309, 5, 0 )
+
+[node name="grass2" type="TileMap" parent="Mundo"]
+position = Vector2( 1, -1 )
+tile_set = ExtResource( 7 )
+cell_size = Vector2( 32, 32 )
+cell_custom_transform = Transform2D( 32, 0, 0, 32, 0, 0 )
+format = 1
+tile_data = PoolIntArray( -393193, 0, 0, -393192, 1, 0, -393191, 1, 0, -393190, 1, 0, -393189, 1, 0, -393188, 2, 0, -393182, 0, 0, -393181, 1, 0, -393180, 1, 0, -393179, 1, 0, -393178, 2, 0, -393170, 0, 0, -393169, 1, 0, -393168, 1, 0, -393167, 1, 0, -393166, 1, 0, -393165, 2, 0, -262076, 0, 0, -262075, 1, 0, -262074, 1, 0, -262073, 1, 0, -262072, 2, 0, -131058, 0, 0, -131057, 1, 0, -131056, 1, 0, -131055, 1, 0, -131054, 536870912, 0, -131014, 0, 0, -131013, 1, 0, -131012, 1, 0, -131011, 1, 0, -131010, 1, 0, -131009, 1, 0, -131008, 2, 0, -65491, 536870914, 0, -65490, 536870913, 0, -65489, 1, 0, -65488, 1, 0, -65487, 1, 0, -65486, 1, 0, -65485, 1, 0, -65484, 2, 0, 24, 0, 0, 25, 1, 0, 26, 2, 0, 131104, 0, 0, 131105, 1, 0, 131106, 1, 0, 131107, 1, 0, 131108, 1, 0, 131109, 1, 0, 131110, 1, 0, 131111, 1, 0, 131112, 2, 0, 131146, 536870914, 0, 131147, 536870913, 0, 131148, 536870913, 0, 131149, 536870913, 0, 131150, 536870913, 0, 131151, 536870912, 0, 196619, 0, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 2, 0, 327703, 0, 0, 327704, 1, 0, 327705, 1, 0, 327706, 1, 0, 327707, 1, 0, 327708, 2, 0, 327725, 0, 0, 327726, 1, 0, 327727, 1, 0, 327728, 1, 0, 327729, 1, 0, 327730, 1, 0, 327731, 1, 0, 327732, 1, 0, 327733, 2, 0, 393275, 0, 0, 393276, 1, 0, 393277, 1, 0, 393278, 1, 0, 393279, 1, 0, 393280, 1, 0, 393281, 1, 0, 393282, 1, 0, 393283, 1, 0, 393284, 1, 0, 393285, 2, 0, 524320, 0, 0, 524321, 1, 0, 524322, 1, 0, 524323, 1, 0, 524324, 1, 0, 524325, 1, 0, 524326, 1, 0, 524327, 1, 0, 524328, 1, 0, 524329, 1, 0, 524330, 2, 0, 786451, 0, 0, 786452, 1, 0, 786453, 1, 0, 786454, 1, 0, 786455, 1, 0, 786456, 1, 0, 786457, 2, 0 )
+
+[node name="special_tree" type="TileMap" parent="Mundo"]
+tile_set = ExtResource( 8 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 589829, 0, 0, 589920, 0, 0 )
+
+[node name="parallax_background1" type="ParallaxBackground" parent="Mundo"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Mundo/parallax_background1"]
+
+[node name="Sprite" type="Sprite" parent="Mundo/parallax_background1/ParallaxLayer"]
+position = Vector2( 2072, 24 )
+scale = Vector2( 1.38133, 1.02642 )
+texture = ExtResource( 11 )
+
+[node name="parallax_background2" type="ParallaxBackground" parent="Mundo"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Mundo/parallax_background2"]
+position = Vector2( 152, 216 )
+
+[node name="backdoor" type="Node" parent="Mundo"]
+
+[node name="backdoor" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor"]
+position = Vector2( 152.338, -268.188 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor"]
+position = Vector2( 152.3, -267.721 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="backdoor2" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor2"]
+position = Vector2( 952.652, -104.598 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor2"]
+position = Vector2( 952.53, -105.488 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="backdoor3" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor3"]
+position = Vector2( 1655.48, -424.213 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor3"]
+position = Vector2( 1653.84, -426.509 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="backdoor4" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor4"]
+position = Vector2( 2239.29, -129.179 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor4"]
+position = Vector2( 2359.29, -121.179 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="backdoor5" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor5"]
+position = Vector2( 2162.24, -299.19 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor5"]
+position = Vector2( 2162.19, -299.685 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="backdoor6" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor6"]
+position = Vector2( 926.001, -297.298 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor6"]
+position = Vector2( 924.916, -297.123 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="backdoor7" type="StaticBody2D" parent="Mundo/backdoor"]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor7"]
+position = Vector2( 1267.7, -554.494 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor7"]
+position = Vector2( 1270.42, -554.136 )
+scale = Vector2( 0.0708184, 0.0727675 )
+frames = SubResource( 2 )
+animation = "move"
+
+[node name="spam" type="Node" parent="Mundo"]
+
+[node name="spam" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 737.411, 162.246 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam"]
+position = Vector2( 24.0718, -17.4197 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam"]
+position = Vector2( -0.975559, -45.1833 )
+frames = SubResource( 4 )
+animation = "move"
+frame = 1
+playing = true
+centered = false
+
+[node name="spam2" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 737.411, 162.246 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam2"]
+position = Vector2( 730.817, -213.433 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam2"]
+position = Vector2( 706.527, -243.071 )
+frames = SubResource( 4 )
+animation = "move"
+frame = 1
+playing = true
+centered = false
+
+[node name="spam3" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 737.411, 162.246 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam3"]
+position = Vector2( 27.9238, -373.687 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam3"]
+position = Vector2( 2.86432, -401.745 )
+frames = SubResource( 4 )
+animation = "move"
+playing = true
+centered = false
+
+[node name="spam4" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 737.411, 162.246 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam4"]
+position = Vector2( 1305.55, 10.5508 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam4"]
+position = Vector2( 1280.82, -19.558 )
+frames = SubResource( 4 )
+animation = "move"
+playing = true
+centered = false
+
+[node name="spam5" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 743.728, 150.553 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam5"]
+position = Vector2( 882.576, -5.63306 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam5"]
+position = Vector2( 859.906, -36.8984 )
+frames = SubResource( 4 )
+animation = "move"
+frame = 1
+playing = true
+centered = false
+
+[node name="spam6" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 665.886, 255.816 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam6"]
+position = Vector2( -191.1, -336.364 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam6"]
+position = Vector2( -215.027, -367.599 )
+frames = SubResource( 4 )
+animation = "move"
+playing = true
+centered = false
+
+[node name="spam7" type="StaticBody2D" parent="Mundo/spam"]
+position = Vector2( 747.045, 498.067 )
+collision_layer = 4
+script = ExtResource( 4 )
+
+[node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam7"]
+position = Vector2( -115.045, -130.067 )
+scale = Vector2( 0.5, 0.5 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam7"]
+position = Vector2( -139.045, -162.067 )
+frames = SubResource( 4 )
+animation = "move"
+frame = 1
+playing = true
+centered = false
+
+[node name="Dica_spam" type="Area2D" parent="Mundo"]
+position = Vector2( 672, 296 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "SPAM é toda mensagem enviada para vários destinatários, que o recebem sem desejar. Ou seja, você não pediu a informação e ela chega até você mesmo sem permissão prévia, ou qualquer manifestacão de desejo ou interesse."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_spam" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "SPAM é toda mensagem enviada para vários destinatários, que o recebem sem desejar. Ou seja, você não pediu a informação e ela chega até você mesmo sem permissão prévia, ou qualquer manifestacão de desejo ou interesse."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_spam"]
+
+[node name="Dica_spam2" type="Area2D" parent="Mundo"]
+position = Vector2( 1118.81, -249.202 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos. E claro, não foi bem recebido."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam2"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_spam2" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos. E claro, não foi bem recebido."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_spam2"]
+
+[node name="Dica_spam3" type="Area2D" parent="Mundo"]
+position = Vector2( 2243.36, -62.9156 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "Conteúdos ofensivos podem gerar constrangimento, ou, ainda pior, formas de confundir o receptor e forcá-lo a acessar itens maliciosos, como links ou arquivos. E, consequentemente, contaminar seus computadores com vírus e outras formas de invasão."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam3"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_spam3" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "Conteúdos ofensivos podem gerar constrangimento, ou, ainda pior, formas de confundir o receptor e forcá-lo a acessar itens maliciosos, como links ou arquivos. E, consequentemente, contaminar seus computadores com vírus e outras formas de invasão."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_spam3"]
+
+[node name="Dica_spam4" type="Area2D" parent="Mundo"]
+position = Vector2( 1795.07, -89.3537 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "Se você utiliza serviços de e-mail de grandes provedores, como Gmail, Outlook e Yahoo! sempre classifique mensagens indesejadas como “SPAM”. Não abra mensagens de remetentes desconhecidos ou que considerar suspeitos."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam4"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_spam4" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "Se você utiliza serviços de e-mail de grandes provedores, como Gmail, Outlook e Yahoo! sempre classifique mensagens indesejadas como “SPAM”. Não abra mensagens de remetentes desconhecidos ou que considerar suspeitos."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_spam4"]
+
+[node name="Dica_backdoor" type="Area2D" parent="Mundo"]
+position = Vector2( 1917.64, -445.32 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_backdoor" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor"]
+
+[node name="Dica_backdoor2" type="Area2D" parent="Mundo"]
+position = Vector2( 2672, -8 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "Além de ter acesso aos arquivos, os crackers também podem controlar funções do computador infectado. Há relatos de conseguirem ligar e desligar a webcam, microfone e drives de cd. "
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor2"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_backdoor2" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "Além de ter acesso aos arquivos, os crackers também podem controlar funções do computador infectado. Há relatos de conseguirem ligar e desligar a webcam, microfone e drives de cd. "
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor2"]
+
+[node name="Dica_backdoor3" type="Area2D" parent="Mundo"]
+position = Vector2( 1370.11, -186.384 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "Outra forma bastante comum é através de programas de acesso remoto (VNC, TeamViewer, NetBus, etc).  Quando instalados sem o consentimento do usuário ou mal configurados, também podem ser considerados backdoors."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor3"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_backdoor3" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "Outra forma bastante comum é através de programas de acesso remoto (VNC, TeamViewer, NetBus, etc).  Quando instalados sem o consentimento do usuário ou mal configurados, também podem ser considerados backdoors."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor3"]
+
+[node name="Dica_backdoor4" type="Area2D" parent="Mundo"]
+position = Vector2( 1368.69, 6.30342 )
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+width = 500
+height = 250
+texto = "Como se prevenir: Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor4"]
+position = Vector2( -301.096, 228.032 )
+shape = SubResource( 5 )
+
+[node name="Balao" parent="Mundo/Dica_backdoor4" instance=ExtResource( 9 )]
+position = Vector2( -42.3853, 64.666 )
+width = 500
+height = 250
+texto = "Como se prevenir: Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
+size = 25
+
+[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor4"]
+[connection signal="body_entered" from="Mundo/Dica_spam" to="Mundo/Dica_spam" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_spam" to="Mundo/Dica_spam" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_spam2" to="Mundo/Dica_spam2" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_spam2" to="Mundo/Dica_spam2" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_spam3" to="Mundo/Dica_spam3" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_spam3" to="Mundo/Dica_spam3" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_spam4" to="Mundo/Dica_spam4" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_spam4" to="Mundo/Dica_spam4" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_backdoor" to="Mundo/Dica_backdoor" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_backdoor" to="Mundo/Dica_backdoor" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_backdoor2" to="Mundo/Dica_backdoor2" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_backdoor2" to="Mundo/Dica_backdoor2" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_backdoor3" to="Mundo/Dica_backdoor3" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_backdoor3" to="Mundo/Dica_backdoor3" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/Dica_backdoor4" to="Mundo/Dica_backdoor4" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/Dica_backdoor4" to="Mundo/Dica_backdoor4" method="_on_Dica_body_exited"]

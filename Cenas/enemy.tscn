@@ -1,0 +1,98 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://sprites/enemies/virus3.png" type="Texture" id=1]
+[ext_resource path="res://sprites/enemies/virus2.png" type="Texture" id=2]
+[ext_resource path="res://sprites/enemies/virus5.png" type="Texture" id=3]
+[ext_resource path="res://sprites/enemies/virus1.png" type="Texture" id=4]
+[ext_resource path="res://sprites/enemies/virus4.png" type="Texture" id=5]
+[ext_resource path="res://sprites/enemies/virus7.png" type="Texture" id=6]
+[ext_resource path="res://sprites/enemies/virus6.png" type="Texture" id=7]
+[ext_resource path="res://scenes/enemy.gd" type="Script" id=8]
+[ext_resource path="res://sprites/enemies/spam1.png" type="Texture" id=9]
+[ext_resource path="res://sprites/enemies/spam2.png" type="Texture" id=10]
+[ext_resource path="res://sprites/enemies/backdoor.png" type="Texture" id=11]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 20.0821
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "move",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16.9319, 19.4434 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "move",
+"speed": 2.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 98.4119, 45.7122 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "move",
+"speed": 5.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="enemy" type="StaticBody2D" parent="."]
+position = Vector2( 89.3868, -23.7434 )
+collision_layer = 4
+script = ExtResource( 8 )
+
+[node name="Shape" type="CollisionShape2D" parent="enemy"]
+position = Vector2( 197.798, 102.483 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="enemy"]
+position = Vector2( 174.96, 80.9598 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 2 )
+animation = "move"
+frame = 6
+centered = false
+
+[node name="spam" type="StaticBody2D" parent="."]
+position = Vector2( 74.5495, 245.767 )
+collision_layer = 4
+script = ExtResource( 8 )
+
+[node name="Shape" type="CollisionShape2D" parent="spam"]
+position = Vector2( -3.4664, 0.0878296 )
+scale = Vector2( 0.2, 0.2 )
+shape = SubResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="spam"]
+position = Vector2( -6.76541, -4.17328 )
+scale = Vector2( 0.135001, 0.168876 )
+frames = SubResource( 4 )
+animation = "move"
+playing = true
+centered = false
+
+[node name="backdoor" type="StaticBody2D" parent="."]
+position = Vector2( 248.71, 345.179 )
+collision_layer = 4
+script = ExtResource( 8 )
+
+[node name="Shape" type="CollisionShape2D" parent="backdoor"]
+position = Vector2( 69.5352, 35.5332 )
+shape = SubResource( 5 )
+
+[node name="Sprite" type="AnimatedSprite" parent="backdoor"]
+position = Vector2( 70.0401, 35.3688 )
+scale = Vector2( 0.213106, 0.237904 )
+frames = SubResource( 6 )
+animation = "move"

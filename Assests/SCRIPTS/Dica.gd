@@ -8,15 +8,15 @@ export var texto = "" setget set_text
 
 onready var tween = get_node("Tween")
 
-#enum {IDLE, MOSTRANDO, ESCONDENDO}
-#var acao = IDLE 
-#signal mostrando 
-#signal mostrou
-#signal escondendo 
-#signal escondeu
+enum {IDLE, MOSTRANDO, ESCONDENDO}
+var acao = IDLE 
+signal mostrando 
+signal mostrou
+signal escondendo 
+signal escondeu
 
 func _ready():
-	if !Engine.is_editor_hint():
+	if !Engine.editor_hint:
 		get_node("Balao").hide()
 	pass	
 		
@@ -40,13 +40,13 @@ func set_height(val):
 
 
 func _on_Dica_body_entered(body):
-	#acao = MOSTRANDO
+	acao = MOSTRANDO
 	tween.interpolate_method(self, "resize", 0, 1, 1.0, Tween.TRANS_BOUNCE, Tween.EASE_OUT, 0)
 	tween.start()
 	pass # Replace with function body.
 	
 func _on_Dica_body_exited(body):
-	#acao = ESCONDENDO
+	acao = ESCONDENDO
 	tween.interpolate_method(self, "resize", 1, 0, .5, Tween.TRANS_EXPO, Tween.EASE_OUT, 0)
 	tween.start()
 	pass
