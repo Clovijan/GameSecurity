@@ -1,16 +1,22 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Dica.gd" type="Script" id=1]
 [ext_resource path="res://Assests/SCRIPTS/backdoor.gd" type="Script" id=2]
 [ext_resource path="res://Assests/SCRIPTS/fase_2.gd" type="Script" id=3]
 [ext_resource path="res://Assests/SCRIPTS/enemy.gd" type="Script" id=4]
+[ext_resource path="res://Assests/TILESET/coracao-png-14.png" type="Texture" id=5]
 [ext_resource path="res://Cenas/grass.tres" type="TileSet" id=6]
 [ext_resource path="res://Cenas/grass2.tres" type="TileSet" id=7]
 [ext_resource path="res://Cenas/special_tree.tres" type="TileSet" id=8]
 [ext_resource path="res://Cenas/Balao/Balao.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Assests/SPRITES/ENEMIES/spam2.png" type="Texture" id=10]
 [ext_resource path="res://Assests/SPRITES/SCENARIOS/scenario2.png" type="Texture" id=11]
+[ext_resource path="res://Assests/SCRIPTS/Score.gd" type="Script" id=12]
+[ext_resource path="res://Assests/FONTE/Open 24 Display St.ttf" type="DynamicFontData" id=13]
+[ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Assests/SCRIPTS/Pause.gd" type="Script" id=15]
 [ext_resource path="res://Assests/SPRITES/ENEMIES/backdoor.png" type="Texture" id=16]
+[ext_resource path="res://Assests/SCRIPTS/Game.gd" type="Script" id=17]
 [ext_resource path="res://Assests/SPRITES/ENEMIES/spam1.png" type="Texture" id=18]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -59,6 +65,34 @@ extents = Vector2( 27.2996, 3.71082 )
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 56.5061, 10.9059 )
 
+[sub_resource type="GDScript" id=13]
+resource_name = "DrawLifes"
+script/source = "extends Node2D
+
+
+export(Texture) var textura
+
+func _ready():
+	Game.connect(\"lifes_changed\", self, \"on_lifes_change\")
+	pass
+
+func on_lifes_change():
+	update()
+	pass
+	
+func _draw():
+	for n in range(0, Game.lifes):
+		draw_texture(textura, Vector2(n * textura.get_width(),0))
+	pass"
+
+[sub_resource type="DynamicFont" id=14]
+size = 80
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 60
+font_data = ExtResource( 13 )
+
 [node name="Control" type="Control"]
 margin_right = 40.0
 margin_bottom = 40.0
@@ -68,6 +102,7 @@ __meta__ = {
 }
 
 [node name="Mundo" type="Node" parent="."]
+script = ExtResource( 17 )
 
 [node name="grass" type="TileMap" parent="Mundo"]
 tile_set = ExtResource( 6 )
@@ -364,6 +399,7 @@ position = Vector2( 1092.9, 164.242 )
 width = 500
 height = 250
 texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos e, não foi bem recebido."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam1"]
 
@@ -384,6 +420,7 @@ position = Vector2( 1956.62, -9.53853 )
 width = 450
 height = 250
 texto = "SPAM é toda mensagem enviada para vários destinatários, que o recebem sem desejar. Ou seja, você não pediu a informação e ela chega até você mesmo sem permissão prévia, ou qualquer manifestacão de desejo ou interesse."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam2"]
 
@@ -404,6 +441,7 @@ position = Vector2( 1961.22, -281.072 )
 width = 500
 height = 250
 texto = "Conteúdos ofensivos podem gerar constrangimento, ou, ainda pior, formas de confundir o receptor e forcá-lo a acessar itens maliciosos, como links ou arquivos. E, consequentemente, contaminar seus computadores com vírus e outras formas de invasão."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam3"]
 
@@ -420,6 +458,7 @@ position = Vector2( 1414.91, -379.777 )
 width = 500
 height = 250
 texto = "Se você utiliza serviços de e-mail de grandes provedores, como Gmail, Outlook e Yahoo! sempre classifique mensagens indesejadas como “SPAM”. Não abra mensagens de remetentes desconhecidos ou que considerar suspeitos."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam4"]
 
@@ -442,6 +481,7 @@ position = Vector2( 1672.76, 343.013 )
 width = 500
 height = 250
 texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor1"]
 
@@ -462,6 +502,7 @@ position = Vector2( 801.429, -36.9419 )
 width = 500
 height = 250
 texto = "Além de ter acesso aos arquivos, os crackers também podem controlar funções do computador infectado. Há relatos de conseguirem ligar e desligar a webcam, microfone e drives de cd. "
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor2"]
 
@@ -482,6 +523,7 @@ position = Vector2( 3078.49, 180.931 )
 width = 500
 height = 250
 texto = "Outra forma bastante comum é através de programas de acesso remoto (VNC, TeamViewer, NetBus, etc).  Quando instalados sem o consentimento do usuário ou mal configurados, também podem ser considerados backdoors."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor3"]
 
@@ -502,12 +544,49 @@ position = Vector2( 2716.77, -186.225 )
 width = 500
 height = 250
 texto = "Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
+size = 25
 
 [node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor4"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_backdoor/dica_backdoor4"]
 position = Vector2( 2260.71, -136.324 )
 shape = SubResource( 12 )
+
+[node name="lifes" type="CanvasLayer" parent="Mundo"]
+layer = 10
+
+[node name="life" type="Node2D" parent="Mundo/lifes"]
+scale = Vector2( 0.02, 0.02 )
+script = SubResource( 13 )
+textura = ExtResource( 5 )
+
+[node name="Pause" type="Node" parent="Mundo"]
+pause_mode = 2
+script = ExtResource( 15 )
+
+[node name="LabelPause" type="CanvasLayer" parent="Mundo/Pause"]
+
+[node name="Label" type="Label" parent="Mundo/Pause/LabelPause"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -175.0
+margin_top = -45.0
+margin_right = 175.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 14 )
+text = "Pause"
+
+[node name="Score" type="CanvasLayer" parent="Mundo"]
+script = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="Mundo/Score"]
+anchor_right = 1.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 15 )
+text = "0"
+align = 1
 [connection signal="body_entered" from="Mundo/dica_spam/dica_spam1" to="Mundo/dica_spam/dica_spam1" method="_on_Dica_body_entered"]
 [connection signal="body_exited" from="Mundo/dica_spam/dica_spam1" to="Mundo/dica_spam/dica_spam1" method="_on_Dica_body_exited"]
 [connection signal="body_entered" from="Mundo/dica_spam/dica_spam2" to="Mundo/dica_spam/dica_spam2" method="_on_Dica_body_entered"]
