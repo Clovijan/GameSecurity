@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Dica.gd" type="Script" id=1]
 [ext_resource path="res://Assests/SCRIPTS/backdoor.gd" type="Script" id=2]
@@ -36,7 +36,28 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 3.10889, 25.059 )
+extents = Vector2( 48.6799, 7.79117 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 30.9608, 5.67749 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 28.9757, 3.23592 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 31.7372, 4.28323 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 23.2177, 2.80371 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 15.8588, 3.79803 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 27.2996, 3.71082 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 56.5061, 10.9059 )
 
 [node name="Control" type="Control"]
 margin_right = 40.0
@@ -73,8 +94,8 @@ tile_data = PoolIntArray( 589829, 0, 0, 589920, 0, 0 )
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Mundo/parallax_background1"]
 
 [node name="Sprite" type="Sprite" parent="Mundo/parallax_background1/ParallaxLayer"]
-position = Vector2( 1932.68, -23.9287 )
-scale = Vector2( 1.344, 1.13779 )
+position = Vector2( 1950.18, -147.962 )
+scale = Vector2( 1.344, 1.38683 )
 texture = ExtResource( 11 )
 
 [node name="parallax_background2" type="ParallaxBackground" parent="Mundo"]
@@ -212,6 +233,7 @@ shape = SubResource( 3 )
 position = Vector2( -122.705, 50.8311 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
@@ -229,6 +251,7 @@ shape = SubResource( 3 )
 position = Vector2( 706.527, -243.071 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
@@ -246,7 +269,6 @@ shape = SubResource( 3 )
 position = Vector2( 2.86432, -401.745 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
@@ -264,7 +286,6 @@ shape = SubResource( 3 )
 position = Vector2( 1280.82, -19.558 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
@@ -274,14 +295,15 @@ collision_layer = 4
 script = ExtResource( 4 )
 
 [node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam5"]
-position = Vector2( 882.576, -5.63306 )
+position = Vector2( 842.909, -7.21973 )
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 3 )
 
 [node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam5"]
-position = Vector2( 859.906, -36.8984 )
+position = Vector2( 817.066, -36.8984 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
@@ -299,7 +321,6 @@ shape = SubResource( 3 )
 position = Vector2( -215.027, -367.599 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
@@ -317,221 +338,189 @@ shape = SubResource( 3 )
 position = Vector2( -139.125, -131.718 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
-[node name="Dica_spam" type="Area2D" parent="Mundo"]
-position = Vector2( 712.118, 297.044 )
+[node name="dica_spam" type="Node" parent="Mundo"]
+
+[node name="dica_spam1" type="Area2D" parent="Mundo/dica_spam"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
+width = 500
+height = 250
+texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos e, não foi bem recebido."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_spam/dica_spam1"]
+position = Vector2( 657.477, 366.314 )
+shape = SubResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
+
+[node name="Balao" parent="Mundo/dica_spam/dica_spam1" instance=ExtResource( 9 )]
+position = Vector2( 1092.9, 164.242 )
 width = 500
+height = 250
+texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos e, não foi bem recebido."
+
+[node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam1"]
+
+[node name="dica_spam2" type="Area2D" parent="Mundo/dica_spam"]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 1 )
+width = 450
 height = 250
 texto = "SPAM é toda mensagem enviada para vários destinatários, que o recebem sem desejar. Ou seja, você não pediu a informação e ela chega até você mesmo sem permissão prévia, ou qualquer manifestacão de desejo ou interesse."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_spam/dica_spam2"]
+position = Vector2( 1473.2, 143.961 )
+shape = SubResource( 6 )
 
-[node name="Balao" parent="Mundo/Dica_spam" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
-width = 500
+[node name="Balao" parent="Mundo/dica_spam/dica_spam2" instance=ExtResource( 9 )]
+position = Vector2( 1956.62, -9.53853 )
+width = 450
 height = 250
 texto = "SPAM é toda mensagem enviada para vários destinatários, que o recebem sem desejar. Ou seja, você não pediu a informação e ela chega até você mesmo sem permissão prévia, ou qualquer manifestacão de desejo ou interesse."
-size = 25
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_spam"]
+[node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam2"]
 
-[node name="Dica_spam2" type="Area2D" parent="Mundo"]
-position = Vector2( 1118.81, -180.975 )
+[node name="dica_spam3" type="Area2D" parent="Mundo/dica_spam"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
-width = 500
-height = 250
-texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos. E claro, não foi bem recebido."
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam2"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
-
-[node name="Balao" parent="Mundo/Dica_spam2" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
-width = 500
-height = 250
-texto = "O primeiro SPAM foi em 1978, um funcionário de uma empresa de computadores, a DEC, achou que os usuários da ARPANET estavam interessados em saber o lançamento de um produto: o DEC 20. Usando um sistema de disparo em massa, ele enviou a propaganda para todos. E claro, não foi bem recebido."
-size = 25
-
-[node name="Tween" type="Tween" parent="Mundo/Dica_spam2"]
-
-[node name="Dica_spam3" type="Area2D" parent="Mundo"]
-position = Vector2( 2208.11, -55.363 )
-collision_layer = 8
-collision_mask = 0
-script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 width = 500
 height = 250
 texto = "Conteúdos ofensivos podem gerar constrangimento, ou, ainda pior, formas de confundir o receptor e forcá-lo a acessar itens maliciosos, como links ou arquivos. E, consequentemente, contaminar seus computadores com vírus e outras formas de invasão."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam3"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_spam/dica_spam3"]
+position = Vector2( 1667.02, -46.4804 )
+shape = SubResource( 7 )
 
-[node name="Balao" parent="Mundo/Dica_spam3" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
+[node name="Balao" parent="Mundo/dica_spam/dica_spam3" instance=ExtResource( 9 )]
+position = Vector2( 1961.22, -281.072 )
 width = 500
 height = 250
 texto = "Conteúdos ofensivos podem gerar constrangimento, ou, ainda pior, formas de confundir o receptor e forcá-lo a acessar itens maliciosos, como links ou arquivos. E, consequentemente, contaminar seus computadores com vírus e outras formas de invasão."
-size = 25
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_spam3"]
+[node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam3"]
 
-[node name="Dica_spam4" type="Area2D" parent="Mundo"]
-position = Vector2( 1795.07, -89.3537 )
+[node name="dica_spam4" type="Area2D" parent="Mundo/dica_spam"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 width = 500
 height = 250
 texto = "Se você utiliza serviços de e-mail de grandes provedores, como Gmail, Outlook e Yahoo! sempre classifique mensagens indesejadas como “SPAM”. Não abra mensagens de remetentes desconhecidos ou que considerar suspeitos."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_spam4"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
-
-[node name="Balao" parent="Mundo/Dica_spam4" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
+[node name="Balao" parent="Mundo/dica_spam/dica_spam4" instance=ExtResource( 9 )]
+position = Vector2( 1414.91, -379.777 )
 width = 500
 height = 250
 texto = "Se você utiliza serviços de e-mail de grandes provedores, como Gmail, Outlook e Yahoo! sempre classifique mensagens indesejadas como “SPAM”. Não abra mensagens de remetentes desconhecidos ou que considerar suspeitos."
-size = 25
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_spam4"]
+[node name="Tween" type="Tween" parent="Mundo/dica_spam/dica_spam4"]
 
-[node name="Dica_backdoor" type="Area2D" parent="Mundo"]
-position = Vector2( 1949.94, -445.32 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_spam/dica_spam4"]
+position = Vector2( 1168.64, -205.997 )
+shape = SubResource( 8 )
+
+[node name="dica_backdoor" type="Node" parent="Mundo"]
+
+[node name="dica_backdoor1" type="Area2D" parent="Mundo/dica_backdoor"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 width = 500
 height = 250
 texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
-
-[node name="Balao" parent="Mundo/Dica_backdoor" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
+[node name="Balao" parent="Mundo/dica_backdoor/dica_backdoor1" instance=ExtResource( 9 )]
+position = Vector2( 1675.03, 345.285 )
 width = 500
 height = 250
 texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
-size = 25
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor"]
+[node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor1"]
 
-[node name="Dica_backdoor2" type="Area2D" parent="Mundo"]
-position = Vector2( 2751.04, 9.64725 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_backdoor/dica_backdoor1"]
+position = Vector2( 1058.78, 338.803 )
+shape = SubResource( 9 )
+
+[node name="dica_backdoor2" type="Area2D" parent="Mundo/dica_backdoor"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 width = 500
 height = 250
 texto = "Além de ter acesso aos arquivos, os crackers também podem controlar funções do computador infectado. Há relatos de conseguirem ligar e desligar a webcam, microfone e drives de cd. "
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor2"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
-
-[node name="Balao" parent="Mundo/Dica_backdoor2" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
+[node name="Balao" parent="Mundo/dica_backdoor/dica_backdoor2" instance=ExtResource( 9 )]
+position = Vector2( 801.429, -36.9419 )
 width = 500
 height = 250
 texto = "Além de ter acesso aos arquivos, os crackers também podem controlar funções do computador infectado. Há relatos de conseguirem ligar e desligar a webcam, microfone e drives de cd. "
-size = 25
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor2"]
+[node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor2"]
 
-[node name="Dica_backdoor3" type="Area2D" parent="Mundo"]
-position = Vector2( 1340.18, -61.2299 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_backdoor/dica_backdoor2"]
+position = Vector2( 530.754, 88.3674 )
+shape = SubResource( 10 )
+
+[node name="dica_backdoor3" type="Area2D" parent="Mundo/dica_backdoor"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 width = 500
 height = 250
 texto = "Outra forma bastante comum é através de programas de acesso remoto (VNC, TeamViewer, NetBus, etc).  Quando instalados sem o consentimento do usuário ou mal configurados, também podem ser considerados backdoors."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor3"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
-
-[node name="Balao" parent="Mundo/Dica_backdoor3" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
+[node name="Balao" parent="Mundo/dica_backdoor/dica_backdoor3" instance=ExtResource( 9 )]
+position = Vector2( 3078.49, 180.931 )
 width = 500
 height = 250
 texto = "Outra forma bastante comum é através de programas de acesso remoto (VNC, TeamViewer, NetBus, etc).  Quando instalados sem o consentimento do usuário ou mal configurados, também podem ser considerados backdoors."
-size = 25
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor3"]
+[node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor3"]
 
-[node name="Dica_backdoor4" type="Area2D" parent="Mundo"]
-position = Vector2( 1333.81, 97.368 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_backdoor/dica_backdoor3"]
+position = Vector2( 2474.62, 245.002 )
+shape = SubResource( 11 )
+
+[node name="dica_backdoor4" type="Area2D" parent="Mundo/dica_backdoor"]
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 width = 500
 height = 250
-texto = "Como se prevenir: Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
+texto = "Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/Dica_backdoor4"]
-position = Vector2( -301.096, 228.032 )
-shape = SubResource( 5 )
-
-[node name="Balao" parent="Mundo/Dica_backdoor4" instance=ExtResource( 9 )]
-position = Vector2( -42.3853, 64.666 )
+[node name="Balao" parent="Mundo/dica_backdoor/dica_backdoor4" instance=ExtResource( 9 )]
+position = Vector2( 2716.77, -186.225 )
 width = 500
 height = 250
-texto = "Como se prevenir: Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
-size = 25
+texto = "Ative o Firewall ele cria uma barreira entre o PC e o ataque de hackers pela internet.  Evite também clicar em links desconhecidos: seja por e-mail, através de banners ou pelas redes sociais, é sempre bom evitar clicar em links desconhecidos."
 
-[node name="Tween" type="Tween" parent="Mundo/Dica_backdoor4"]
-[connection signal="body_entered" from="Mundo/Dica_spam" to="Mundo/Dica_spam" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_spam" to="Mundo/Dica_spam" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_spam2" to="Mundo/Dica_spam2" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_spam2" to="Mundo/Dica_spam2" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_spam3" to="Mundo/Dica_spam3" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_spam3" to="Mundo/Dica_spam3" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_spam4" to="Mundo/Dica_spam4" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_spam4" to="Mundo/Dica_spam4" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_backdoor" to="Mundo/Dica_backdoor" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_backdoor" to="Mundo/Dica_backdoor" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_backdoor2" to="Mundo/Dica_backdoor2" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_backdoor2" to="Mundo/Dica_backdoor2" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_backdoor3" to="Mundo/Dica_backdoor3" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_backdoor3" to="Mundo/Dica_backdoor3" method="_on_Dica_body_exited"]
-[connection signal="body_entered" from="Mundo/Dica_backdoor4" to="Mundo/Dica_backdoor4" method="_on_Dica_body_entered"]
-[connection signal="body_exited" from="Mundo/Dica_backdoor4" to="Mundo/Dica_backdoor4" method="_on_Dica_body_exited"]
+[node name="Tween" type="Tween" parent="Mundo/dica_backdoor/dica_backdoor4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo/dica_backdoor/dica_backdoor4"]
+position = Vector2( 2260.71, -136.324 )
+shape = SubResource( 12 )
+[connection signal="body_entered" from="Mundo/dica_spam/dica_spam1" to="Mundo/dica_spam/dica_spam1" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_spam/dica_spam1" to="Mundo/dica_spam/dica_spam1" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_spam/dica_spam2" to="Mundo/dica_spam/dica_spam2" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_spam/dica_spam2" to="Mundo/dica_spam/dica_spam2" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_spam/dica_spam3" to="Mundo/dica_spam/dica_spam3" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_spam/dica_spam3" to="Mundo/dica_spam/dica_spam3" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_spam/dica_spam4" to="Mundo/dica_spam/dica_spam4" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_spam/dica_spam4" to="Mundo/dica_spam/dica_spam4" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_backdoor/dica_backdoor1" to="Mundo/dica_backdoor/dica_backdoor1" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_backdoor/dica_backdoor1" to="Mundo/dica_backdoor/dica_backdoor1" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_backdoor/dica_backdoor2" to="Mundo/dica_backdoor/dica_backdoor2" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_backdoor/dica_backdoor2" to="Mundo/dica_backdoor/dica_backdoor2" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_backdoor/dica_backdoor3" to="Mundo/dica_backdoor/dica_backdoor3" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_backdoor/dica_backdoor3" to="Mundo/dica_backdoor/dica_backdoor3" method="_on_Dica_body_exited"]
+[connection signal="body_entered" from="Mundo/dica_backdoor/dica_backdoor4" to="Mundo/dica_backdoor/dica_backdoor4" method="_on_Dica_body_entered"]
+[connection signal="body_exited" from="Mundo/dica_backdoor/dica_backdoor4" to="Mundo/dica_backdoor/dica_backdoor4" method="_on_Dica_body_exited"]
