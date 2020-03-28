@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="GameSecurity"
-run/main_scene="res://Cenas/fase_2.tscn"
+run/main_scene="res://Cenas/Fase_2.tscn"
 
 [autoload]
 
