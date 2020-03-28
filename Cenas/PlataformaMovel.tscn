@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/PlataformaMovel.gd" type="Script" id=1]
+[ext_resource path="res://Assests/TILESMAP/plataforma.tres" type="TileSet" id=2]
+
+[node name="PlataformaMovel" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 32 )
+format = 1
+tile_data = PoolIntArray( 65535, 0, 0, 0, 0, 0 )

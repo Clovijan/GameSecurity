@@ -14,12 +14,12 @@ width = 700
 height = 400
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -332.189, 211.206 )
+position = Vector2( -282.976, 186.599 )
 shape = SubResource( 1 )
 
 [node name="Balao" parent="." instance=ExtResource( 2 )]
-width = 700
-height = 400
+width = 400
+height = 200
 
 [node name="Tween" type="Tween" parent="."]
 [connection signal="body_entered" from="." to="." method="_on_Dica_body_entered"]
