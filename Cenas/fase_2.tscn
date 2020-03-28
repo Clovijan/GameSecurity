@@ -438,7 +438,7 @@ height = 250
 texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
 
 [node name="Balao" parent="Mundo/dica_backdoor/dica_backdoor1" instance=ExtResource( 9 )]
-position = Vector2( 1675.03, 345.285 )
+position = Vector2( 1672.76, 343.013 )
 width = 500
 height = 250
 texto = "O backdoor tem como finalidade o controle de um único computador. Este tipo de ataque é um dos mais prejudiciais aos usuários, já que, de certa forma, todos os arquivos poderão ser acessados pelo criminoso virtual de forma remota."
