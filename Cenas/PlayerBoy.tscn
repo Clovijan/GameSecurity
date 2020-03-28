@@ -16,50 +16,50 @@
 [ext_resource path="res://Assests/BOY/Idle (13).png" type="Texture" id=14]
 [ext_resource path="res://Assests/BOY/Idle (14).png" type="Texture" id=15]
 [ext_resource path="res://Assests/BOY/Idle (15).png" type="Texture" id=16]
-[ext_resource path="res://Assests/BOY/Dead (1).png" type="Texture" id=17]
-[ext_resource path="res://Assests/BOY/Dead (2).png" type="Texture" id=18]
-[ext_resource path="res://Assests/BOY/Dead (3).png" type="Texture" id=19]
-[ext_resource path="res://Assests/BOY/Dead (4).png" type="Texture" id=20]
-[ext_resource path="res://Assests/BOY/Dead (5).png" type="Texture" id=21]
-[ext_resource path="res://Assests/BOY/Dead (6).png" type="Texture" id=22]
-[ext_resource path="res://Assests/BOY/Dead (7).png" type="Texture" id=23]
-[ext_resource path="res://Assests/BOY/Dead (8).png" type="Texture" id=24]
-[ext_resource path="res://Assests/BOY/Dead (9).png" type="Texture" id=25]
-[ext_resource path="res://Assests/BOY/Dead (10).png" type="Texture" id=26]
-[ext_resource path="res://Assests/BOY/Dead (11).png" type="Texture" id=27]
-[ext_resource path="res://Assests/BOY/Dead (12).png" type="Texture" id=28]
-[ext_resource path="res://Assests/BOY/Dead (13).png" type="Texture" id=29]
-[ext_resource path="res://Assests/BOY/Dead (14).png" type="Texture" id=30]
-[ext_resource path="res://Assests/BOY/Dead (15).png" type="Texture" id=31]
-[ext_resource path="res://Assests/BOY/Jump (1).png" type="Texture" id=32]
-[ext_resource path="res://Assests/BOY/Jump (2).png" type="Texture" id=33]
-[ext_resource path="res://Assests/BOY/Jump (3).png" type="Texture" id=34]
-[ext_resource path="res://Assests/BOY/Jump (4).png" type="Texture" id=35]
-[ext_resource path="res://Assests/BOY/Jump (5).png" type="Texture" id=36]
-[ext_resource path="res://Assests/BOY/Jump (6).png" type="Texture" id=37]
-[ext_resource path="res://Assests/BOY/Jump (7).png" type="Texture" id=38]
-[ext_resource path="res://Assests/BOY/Jump (8).png" type="Texture" id=39]
-[ext_resource path="res://Assests/BOY/Jump (9).png" type="Texture" id=40]
-[ext_resource path="res://Assests/BOY/Jump (10).png" type="Texture" id=41]
-[ext_resource path="res://Assests/BOY/Jump (11).png" type="Texture" id=42]
-[ext_resource path="res://Assests/BOY/Jump (12).png" type="Texture" id=43]
-[ext_resource path="res://Assests/BOY/Jump (13).png" type="Texture" id=44]
-[ext_resource path="res://Assests/BOY/Jump (14).png" type="Texture" id=45]
-[ext_resource path="res://Assests/BOY/Jump (15).png" type="Texture" id=46]
-[ext_resource path="res://Assests/BOY/Run (2).png" type="Texture" id=47]
-[ext_resource path="res://Assests/BOY/Run (3).png" type="Texture" id=48]
-[ext_resource path="res://Assests/BOY/Run (4).png" type="Texture" id=49]
-[ext_resource path="res://Assests/BOY/Run (5).png" type="Texture" id=50]
-[ext_resource path="res://Assests/BOY/Run (6).png" type="Texture" id=51]
-[ext_resource path="res://Assests/BOY/Run (7).png" type="Texture" id=52]
-[ext_resource path="res://Assests/BOY/Run (8).png" type="Texture" id=53]
-[ext_resource path="res://Assests/BOY/Run (9).png" type="Texture" id=54]
-[ext_resource path="res://Assests/BOY/Run (10).png" type="Texture" id=55]
-[ext_resource path="res://Assests/BOY/Run (11).png" type="Texture" id=56]
-[ext_resource path="res://Assests/BOY/Run (12).png" type="Texture" id=57]
-[ext_resource path="res://Assests/BOY/Run (13).png" type="Texture" id=58]
-[ext_resource path="res://Assests/BOY/Run (14).png" type="Texture" id=59]
-[ext_resource path="res://Assests/BOY/Run (15).png" type="Texture" id=60]
+[ext_resource path="res://Assests/BOY/Jump (1).png" type="Texture" id=17]
+[ext_resource path="res://Assests/BOY/Jump (2).png" type="Texture" id=18]
+[ext_resource path="res://Assests/BOY/Jump (3).png" type="Texture" id=19]
+[ext_resource path="res://Assests/BOY/Jump (4).png" type="Texture" id=20]
+[ext_resource path="res://Assests/BOY/Jump (5).png" type="Texture" id=21]
+[ext_resource path="res://Assests/BOY/Jump (6).png" type="Texture" id=22]
+[ext_resource path="res://Assests/BOY/Jump (7).png" type="Texture" id=23]
+[ext_resource path="res://Assests/BOY/Jump (8).png" type="Texture" id=24]
+[ext_resource path="res://Assests/BOY/Jump (9).png" type="Texture" id=25]
+[ext_resource path="res://Assests/BOY/Jump (10).png" type="Texture" id=26]
+[ext_resource path="res://Assests/BOY/Jump (11).png" type="Texture" id=27]
+[ext_resource path="res://Assests/BOY/Jump (12).png" type="Texture" id=28]
+[ext_resource path="res://Assests/BOY/Jump (13).png" type="Texture" id=29]
+[ext_resource path="res://Assests/BOY/Jump (14).png" type="Texture" id=30]
+[ext_resource path="res://Assests/BOY/Jump (15).png" type="Texture" id=31]
+[ext_resource path="res://Assests/BOY/Run (2).png" type="Texture" id=32]
+[ext_resource path="res://Assests/BOY/Run (3).png" type="Texture" id=33]
+[ext_resource path="res://Assests/BOY/Run (4).png" type="Texture" id=34]
+[ext_resource path="res://Assests/BOY/Run (5).png" type="Texture" id=35]
+[ext_resource path="res://Assests/BOY/Run (6).png" type="Texture" id=36]
+[ext_resource path="res://Assests/BOY/Run (7).png" type="Texture" id=37]
+[ext_resource path="res://Assests/BOY/Run (8).png" type="Texture" id=38]
+[ext_resource path="res://Assests/BOY/Run (9).png" type="Texture" id=39]
+[ext_resource path="res://Assests/BOY/Run (10).png" type="Texture" id=40]
+[ext_resource path="res://Assests/BOY/Run (11).png" type="Texture" id=41]
+[ext_resource path="res://Assests/BOY/Run (12).png" type="Texture" id=42]
+[ext_resource path="res://Assests/BOY/Run (13).png" type="Texture" id=43]
+[ext_resource path="res://Assests/BOY/Run (14).png" type="Texture" id=44]
+[ext_resource path="res://Assests/BOY/Run (15).png" type="Texture" id=45]
+[ext_resource path="res://Assests/BOY/Dead (1).png" type="Texture" id=46]
+[ext_resource path="res://Assests/BOY/Dead (2).png" type="Texture" id=47]
+[ext_resource path="res://Assests/BOY/Dead (3).png" type="Texture" id=48]
+[ext_resource path="res://Assests/BOY/Dead (4).png" type="Texture" id=49]
+[ext_resource path="res://Assests/BOY/Dead (5).png" type="Texture" id=50]
+[ext_resource path="res://Assests/BOY/Dead (6).png" type="Texture" id=51]
+[ext_resource path="res://Assests/BOY/Dead (7).png" type="Texture" id=52]
+[ext_resource path="res://Assests/BOY/Dead (8).png" type="Texture" id=53]
+[ext_resource path="res://Assests/BOY/Dead (9).png" type="Texture" id=54]
+[ext_resource path="res://Assests/BOY/Dead (10).png" type="Texture" id=55]
+[ext_resource path="res://Assests/BOY/Dead (11).png" type="Texture" id=56]
+[ext_resource path="res://Assests/BOY/Dead (12).png" type="Texture" id=57]
+[ext_resource path="res://Assests/BOY/Dead (13).png" type="Texture" id=58]
+[ext_resource path="res://Assests/BOY/Dead (14).png" type="Texture" id=59]
+[ext_resource path="res://Assests/BOY/Dead (15).png" type="Texture" id=60]
 [ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=61]
 [ext_resource path="res://Assests/SONS/Sound Way MSX.wav" type="AudioStream" id=62]
 [ext_resource path="res://Assests/SONS/FX341.wav" type="AudioStream" id=63]
@@ -74,23 +74,23 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
 "loop": true,
-"name": "Dead",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
-"loop": true,
 "name": "Jump",
 "speed": 40.0
 }, {
-"frames": [ ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ],
 "loop": true,
 "name": "Run",
 "speed": 40.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 33.3974
-height = 67.8419
+height = 58.2625
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 22.5817, 1.83536 )
@@ -100,7 +100,7 @@ radius = 35.1456
 height = 65.368
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 38.4042, 34.5349 )
+position = Vector2( 398.869, 25.8838 )
 input_pickable = true
 collision_layer = 2
 collision_mask = 11
@@ -114,11 +114,11 @@ animation = "Ide"
 frame = 4
 
 [node name="Shape" type="CollisionShape2D" parent="."]
-position = Vector2( 109.239, 409.184 )
+position = Vector2( 109.239, 412.184 )
 shape = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -43.0007, -27.5718 )
+position = Vector2( -399.139, -26.1299 )
 anchor_mode = 0
 rotating = true
 current = true
