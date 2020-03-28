@@ -1,0 +1,161 @@
+[gd_scene load_steps=69 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/PlayerGirl.gd" type="Script" id=1]
+[ext_resource path="res://Assests/BOY/Idle (1).png" type="Texture" id=2]
+[ext_resource path="res://Assests/BOY/Idle (2).png" type="Texture" id=3]
+[ext_resource path="res://Assests/BOY/Idle (3).png" type="Texture" id=4]
+[ext_resource path="res://Assests/BOY/Idle (4).png" type="Texture" id=5]
+[ext_resource path="res://Assests/BOY/Idle (5).png" type="Texture" id=6]
+[ext_resource path="res://Assests/BOY/Idle (6).png" type="Texture" id=7]
+[ext_resource path="res://Assests/BOY/Idle (7).png" type="Texture" id=8]
+[ext_resource path="res://Assests/BOY/Idle (8).png" type="Texture" id=9]
+[ext_resource path="res://Assests/BOY/Idle (9).png" type="Texture" id=10]
+[ext_resource path="res://Assests/BOY/Idle (10).png" type="Texture" id=11]
+[ext_resource path="res://Assests/BOY/Idle (11).png" type="Texture" id=12]
+[ext_resource path="res://Assests/BOY/Idle (12).png" type="Texture" id=13]
+[ext_resource path="res://Assests/BOY/Idle (13).png" type="Texture" id=14]
+[ext_resource path="res://Assests/BOY/Idle (14).png" type="Texture" id=15]
+[ext_resource path="res://Assests/BOY/Idle (15).png" type="Texture" id=16]
+[ext_resource path="res://Assests/BOY/Jump (1).png" type="Texture" id=17]
+[ext_resource path="res://Assests/BOY/Jump (2).png" type="Texture" id=18]
+[ext_resource path="res://Assests/BOY/Jump (3).png" type="Texture" id=19]
+[ext_resource path="res://Assests/BOY/Jump (4).png" type="Texture" id=20]
+[ext_resource path="res://Assests/BOY/Jump (5).png" type="Texture" id=21]
+[ext_resource path="res://Assests/BOY/Jump (6).png" type="Texture" id=22]
+[ext_resource path="res://Assests/BOY/Jump (7).png" type="Texture" id=23]
+[ext_resource path="res://Assests/BOY/Jump (8).png" type="Texture" id=24]
+[ext_resource path="res://Assests/BOY/Jump (9).png" type="Texture" id=25]
+[ext_resource path="res://Assests/BOY/Jump (10).png" type="Texture" id=26]
+[ext_resource path="res://Assests/BOY/Jump (11).png" type="Texture" id=27]
+[ext_resource path="res://Assests/BOY/Jump (12).png" type="Texture" id=28]
+[ext_resource path="res://Assests/BOY/Jump (13).png" type="Texture" id=29]
+[ext_resource path="res://Assests/BOY/Jump (14).png" type="Texture" id=30]
+[ext_resource path="res://Assests/BOY/Jump (15).png" type="Texture" id=31]
+[ext_resource path="res://Assests/BOY/Dead (1).png" type="Texture" id=32]
+[ext_resource path="res://Assests/BOY/Dead (2).png" type="Texture" id=33]
+[ext_resource path="res://Assests/BOY/Dead (3).png" type="Texture" id=34]
+[ext_resource path="res://Assests/BOY/Dead (4).png" type="Texture" id=35]
+[ext_resource path="res://Assests/BOY/Dead (5).png" type="Texture" id=36]
+[ext_resource path="res://Assests/BOY/Dead (6).png" type="Texture" id=37]
+[ext_resource path="res://Assests/BOY/Dead (7).png" type="Texture" id=38]
+[ext_resource path="res://Assests/BOY/Dead (8).png" type="Texture" id=39]
+[ext_resource path="res://Assests/BOY/Dead (9).png" type="Texture" id=40]
+[ext_resource path="res://Assests/BOY/Dead (10).png" type="Texture" id=41]
+[ext_resource path="res://Assests/BOY/Dead (11).png" type="Texture" id=42]
+[ext_resource path="res://Assests/BOY/Dead (12).png" type="Texture" id=43]
+[ext_resource path="res://Assests/BOY/Dead (13).png" type="Texture" id=44]
+[ext_resource path="res://Assests/BOY/Dead (14).png" type="Texture" id=45]
+[ext_resource path="res://Assests/BOY/Dead (15).png" type="Texture" id=46]
+[ext_resource path="res://Assests/BOY/Run (2).png" type="Texture" id=47]
+[ext_resource path="res://Assests/BOY/Run (3).png" type="Texture" id=48]
+[ext_resource path="res://Assests/BOY/Run (4).png" type="Texture" id=49]
+[ext_resource path="res://Assests/BOY/Run (5).png" type="Texture" id=50]
+[ext_resource path="res://Assests/BOY/Run (6).png" type="Texture" id=51]
+[ext_resource path="res://Assests/BOY/Run (7).png" type="Texture" id=52]
+[ext_resource path="res://Assests/BOY/Run (8).png" type="Texture" id=53]
+[ext_resource path="res://Assests/BOY/Run (9).png" type="Texture" id=54]
+[ext_resource path="res://Assests/BOY/Run (10).png" type="Texture" id=55]
+[ext_resource path="res://Assests/BOY/Run (11).png" type="Texture" id=56]
+[ext_resource path="res://Assests/BOY/Run (12).png" type="Texture" id=57]
+[ext_resource path="res://Assests/BOY/Run (13).png" type="Texture" id=58]
+[ext_resource path="res://Assests/BOY/Run (14).png" type="Texture" id=59]
+[ext_resource path="res://Assests/BOY/Run (15).png" type="Texture" id=60]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=61]
+[ext_resource path="res://Assests/SONS/Sound Way MSX.wav" type="AudioStream" id=62]
+[ext_resource path="res://Assests/SONS/FX341.wav" type="AudioStream" id=63]
+[ext_resource path="res://Assests/SONS/EndGame.wav" type="AudioStream" id=64]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Ide",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "Dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "Run",
+"speed": 40.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+height = 50.9456
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10.6833, 2.77768 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 6.66632
+height = 43.8619
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 248, 32 )
+input_pickable = true
+collision_layer = 2
+collision_mask = 11
+script = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 199.381, 402.395 )
+scale = Vector2( 0.119444, 0.199821 )
+frames = SubResource( 1 )
+animation = "Ide"
+frame = 12
+playing = true
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2( 194.453, 413.422 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -55.9515, -64.2657 )
+anchor_mode = 0
+rotating = true
+current = true
+
+[node name="Pes" type="Area2D" parent="."]
+position = Vector2( 107.988, 505.891 )
+collision_layer = 4
+collision_mask = 4
+
+[node name="Shape" type="CollisionShape2D" parent="Pes"]
+position = Vector2( 85.6457, -55.2472 )
+shape = SubResource( 3 )
+
+[node name="Dano" type="Area2D" parent="."]
+position = Vector2( 112, 408 )
+collision_layer = 4
+collision_mask = 4
+
+[node name="Shape" type="CollisionShape2D" parent="Dano"]
+position = Vector2( 82.2574, 11.5023 )
+shape = SubResource( 4 )
+
+[node name="SoundJump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 61 )
+volume_db = -3.688
+
+[node name="SoundGame" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 62 )
+volume_db = -14.752
+
+[node name="SoundPerdaVida" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 63 )
+
+[node name="SoundGameOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 64 )
+volume_db = -10.065
+[connection signal="body_entered" from="Pes" to="." method="_on_Pes_body_entered"]
+[connection signal="body_entered" from="Dano" to="." method="_on_Dano_body_entered"]
+[connection signal="finished" from="SoundPerdaVida" to="." method="_on_SoundPerdaVida_finished"]
+[connection signal="finished" from="SoundGameOver" to="." method="_on_SoundGameOver_finished"]

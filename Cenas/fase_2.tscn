@@ -36,7 +36,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 13.096, 25.059 )
+extents = Vector2( 3.10889, 25.059 )
 
 [node name="Control" type="Control"]
 margin_right = 40.0
@@ -60,7 +60,7 @@ tile_set = ExtResource( 7 )
 cell_size = Vector2( 32, 32 )
 cell_custom_transform = Transform2D( 32, 0, 0, 32, 0, 0 )
 format = 1
-tile_data = PoolIntArray( -393193, 0, 0, -393192, 1, 0, -393191, 1, 0, -393190, 1, 0, -393189, 1, 0, -393188, 2, 0, -393182, 0, 0, -393181, 1, 0, -393180, 1, 0, -393179, 1, 0, -393178, 2, 0, -393170, 0, 0, -393169, 1, 0, -393168, 1, 0, -393167, 1, 0, -393166, 1, 0, -393165, 2, 0, -262076, 0, 0, -262075, 1, 0, -262074, 1, 0, -262073, 1, 0, -262072, 2, 0, -131058, 0, 0, -131057, 1, 0, -131056, 1, 0, -131055, 1, 0, -131054, 536870912, 0, -131014, 0, 0, -131013, 1, 0, -131012, 1, 0, -131011, 1, 0, -131010, 1, 0, -131009, 1, 0, -131008, 2, 0, -65491, 536870914, 0, -65490, 536870913, 0, -65489, 1, 0, -65488, 1, 0, -65487, 1, 0, -65486, 1, 0, -65485, 1, 0, -65484, 2, 0, 24, 0, 0, 25, 1, 0, 26, 2, 0, 131104, 0, 0, 131105, 1, 0, 131106, 1, 0, 131107, 1, 0, 131108, 1, 0, 131109, 1, 0, 131110, 1, 0, 131111, 1, 0, 131112, 2, 0, 131146, 536870914, 0, 131147, 536870913, 0, 131148, 536870913, 0, 131149, 536870913, 0, 131150, 536870913, 0, 131151, 536870912, 0, 196619, 0, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 2, 0, 327703, 0, 0, 327704, 1, 0, 327705, 1, 0, 327706, 1, 0, 327707, 1, 0, 327708, 2, 0, 327725, 0, 0, 327726, 1, 0, 327727, 1, 0, 327728, 1, 0, 327729, 1, 0, 327730, 1, 0, 327731, 1, 0, 327732, 1, 0, 327733, 2, 0, 393275, 0, 0, 393276, 1, 0, 393277, 1, 0, 393278, 1, 0, 393279, 1, 0, 393280, 1, 0, 393281, 1, 0, 393282, 1, 0, 393283, 1, 0, 393284, 1, 0, 393285, 2, 0, 524320, 0, 0, 524321, 1, 0, 524322, 1, 0, 524323, 1, 0, 524324, 1, 0, 524325, 1, 0, 524326, 1, 0, 524327, 1, 0, 524328, 1, 0, 524329, 1, 0, 524330, 2, 0, 524364, 0, 0, 524365, 1, 0, 524366, 1, 0, 524367, 1, 0, 524368, 1, 0, 524369, 1, 0, 524370, 1, 0, 524371, 1, 0, 524372, 1, 0, 524373, 1, 0, 524374, 2, 0, 786451, 0, 0, 786452, 1, 0, 786453, 1, 0, 786454, 1, 0, 786455, 1, 0, 786456, 1, 0, 786457, 2, 0 )
+tile_data = PoolIntArray( -393193, 0, 0, -393192, 1, 0, -393191, 1, 0, -393190, 1, 0, -393189, 1, 0, -393188, 2, 0, -393182, 0, 0, -393181, 1, 0, -393180, 1, 0, -393179, 1, 0, -393178, 2, 0, -393170, 0, 0, -393169, 1, 0, -393168, 1, 0, -393167, 1, 0, -393166, 1, 0, -393165, 2, 0, -262076, 0, 0, -262075, 1, 0, -262074, 1, 0, -262073, 1, 0, -262072, 2, 0, -131058, 0, 0, -131057, 1, 0, -131056, 1, 0, -131055, 1, 0, -131054, 536870912, 0, -131014, 0, 0, -131013, 1, 0, -131012, 1, 0, -131011, 1, 0, -131010, 1, 0, -131009, 1, 0, -131008, 2, 0, -65491, 536870914, 0, -65490, 536870913, 0, -65489, 1, 0, -65488, 1, 0, -65487, 1, 0, -65486, 1, 0, -65485, 1, 0, -65484, 2, 0, 65569, 0, 0, 65570, 1, 0, 65571, 1, 0, 65572, 1, 0, 65573, 1, 0, 65574, 1, 0, 65575, 2, 0, 131096, 0, 0, 131097, 1, 0, 131098, 2, 0, 131146, 536870914, 0, 131147, 536870913, 0, 131148, 536870913, 0, 131149, 536870913, 0, 131150, 536870913, 0, 131151, 536870912, 0, 196619, 0, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 2, 0, 327725, 0, 0, 327726, 1, 0, 327727, 1, 0, 327728, 1, 0, 327729, 1, 0, 327730, 1, 0, 327731, 1, 0, 327732, 1, 0, 327733, 2, 0, 393248, 0, 0, 393249, 1, 0, 393250, 1, 0, 393251, 1, 0, 393252, 1, 0, 393253, 1, 0, 393254, 1, 0, 393255, 1, 0, 393256, 2, 0, 393275, 0, 0, 393276, 1, 0, 393277, 1, 0, 393278, 1, 0, 393279, 1, 0, 393280, 1, 0, 393281, 1, 0, 393282, 1, 0, 393283, 1, 0, 393284, 1, 0, 393285, 2, 0, 524307, 0, 0, 524308, 1, 0, 524309, 1, 0, 524310, 1, 0, 524311, 1, 0, 524312, 1, 0, 524313, 2, 0, 524364, 0, 0, 524365, 1, 0, 524366, 1, 0, 524367, 1, 0, 524368, 1, 0, 524369, 1, 0, 524370, 1, 0, 524371, 1, 0, 524372, 1, 0, 524373, 1, 0, 524374, 2, 0, 720928, 0, 0, 720929, 1, 0, 720930, 1, 0, 720931, 1, 0, 720932, 1, 0, 720933, 1, 0, 720934, 1, 0, 720935, 1, 0, 720936, 1, 0, 720937, 1, 0, 720938, 2, 0, 851987, 0, 0, 851988, 1, 0, 851989, 1, 0, 851990, 1, 0, 851991, 1, 0, 851992, 1, 0, 851993, 2, 0 )
 
 [node name="special_tree" type="TileMap" parent="Mundo"]
 tile_set = ExtResource( 8 )
@@ -73,8 +73,8 @@ tile_data = PoolIntArray( 589829, 0, 0, 589920, 0, 0 )
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Mundo/parallax_background1"]
 
 [node name="Sprite" type="Sprite" parent="Mundo/parallax_background1/ParallaxLayer"]
-position = Vector2( 2016.57, 22.8624 )
-scale = Vector2( 1.344, 1.02883 )
+position = Vector2( 1932.68, -23.9287 )
+scale = Vector2( 1.344, 1.13779 )
 texture = ExtResource( 11 )
 
 [node name="parallax_background2" type="ParallaxBackground" parent="Mundo"]
@@ -106,12 +106,12 @@ collision_layer = 4
 script = ExtResource( 2 )
 
 [node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor2"]
-position = Vector2( 952.652, -104.598 )
+position = Vector2( 946.607, -13.4758 )
 scale = Vector2( 0.2, 0.2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor2"]
-position = Vector2( 952.53, -105.488 )
+position = Vector2( 945.125, -12.4019 )
 scale = Vector2( 0.0708184, 0.0727675 )
 frames = SubResource( 2 )
 animation = "move"
@@ -170,12 +170,12 @@ collision_layer = 4
 script = ExtResource( 2 )
 
 [node name="Shape" type="CollisionShape2D" parent="Mundo/backdoor/backdoor6"]
-position = Vector2( 926.001, -297.298 )
+position = Vector2( 904.235, -170.783 )
 scale = Vector2( 0.2, 0.2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="Mundo/backdoor/backdoor6"]
-position = Vector2( 924.916, -297.123 )
+position = Vector2( 904.51, -171.969 )
 scale = Vector2( 0.0708184, 0.0727675 )
 frames = SubResource( 2 )
 animation = "move"
@@ -204,12 +204,12 @@ collision_layer = 4
 script = ExtResource( 4 )
 
 [node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam"]
-position = Vector2( 24.0718, -17.4197 )
+position = Vector2( -97.5151, 80.5947 )
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 3 )
 
 [node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam"]
-position = Vector2( -0.975559, -45.1833 )
+position = Vector2( -122.705, 50.8311 )
 frames = SubResource( 4 )
 animation = "move"
 playing = true
@@ -309,19 +309,19 @@ collision_layer = 4
 script = ExtResource( 4 )
 
 [node name="Shape" type="CollisionShape2D" parent="Mundo/spam/spam7"]
-position = Vector2( -115.045, -130.067 )
+position = Vector2( -115.045, -100.617 )
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 3 )
 
 [node name="Sprite" type="AnimatedSprite" parent="Mundo/spam/spam7"]
-position = Vector2( -139.045, -162.067 )
+position = Vector2( -139.125, -131.718 )
 frames = SubResource( 4 )
 animation = "move"
 playing = true
 centered = false
 
 [node name="Dica_spam" type="Area2D" parent="Mundo"]
-position = Vector2( 667.34, 290.517 )
+position = Vector2( 712.118, 297.044 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
@@ -346,7 +346,7 @@ size = 25
 [node name="Tween" type="Tween" parent="Mundo/Dica_spam"]
 
 [node name="Dica_spam2" type="Area2D" parent="Mundo"]
-position = Vector2( 1118.81, -249.202 )
+position = Vector2( 1118.81, -180.975 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
@@ -371,7 +371,7 @@ size = 25
 [node name="Tween" type="Tween" parent="Mundo/Dica_spam2"]
 
 [node name="Dica_spam3" type="Area2D" parent="Mundo"]
-position = Vector2( 2243.36, -62.9156 )
+position = Vector2( 2208.11, -55.363 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
@@ -421,7 +421,7 @@ size = 25
 [node name="Tween" type="Tween" parent="Mundo/Dica_spam4"]
 
 [node name="Dica_backdoor" type="Area2D" parent="Mundo"]
-position = Vector2( 1917.64, -445.32 )
+position = Vector2( 1949.94, -445.32 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
@@ -446,7 +446,7 @@ size = 25
 [node name="Tween" type="Tween" parent="Mundo/Dica_backdoor"]
 
 [node name="Dica_backdoor2" type="Area2D" parent="Mundo"]
-position = Vector2( 2672, -8 )
+position = Vector2( 2751.04, 9.64725 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
@@ -471,7 +471,7 @@ size = 25
 [node name="Tween" type="Tween" parent="Mundo/Dica_backdoor2"]
 
 [node name="Dica_backdoor3" type="Area2D" parent="Mundo"]
-position = Vector2( 1370.11, -186.384 )
+position = Vector2( 1340.18, -61.2299 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
@@ -496,7 +496,7 @@ size = 25
 [node name="Tween" type="Tween" parent="Mundo/Dica_backdoor3"]
 
 [node name="Dica_backdoor4" type="Area2D" parent="Mundo"]
-position = Vector2( 1368.69, 6.30342 )
+position = Vector2( 1333.81, 97.368 )
 collision_layer = 8
 collision_mask = 0
 script = ExtResource( 1 )
