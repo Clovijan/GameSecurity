@@ -60,6 +60,5 @@ func _on_SoundPerdaVida_finished():
 
 
 func _on_SoundGameOver_finished():
-	get_tree().paused = true
 	get_tree().change_scene("res://Cenas/TelaGameOver.tscn")
 	pass # Replace with function body.

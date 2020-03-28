@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/TelaGameOver.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TELA HOME/1.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assests/BOTOES/Menu.png" type="Texture" id=4]
+[ext_resource path="res://Assests/BOTOES/Play.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
@@ -27,18 +29,18 @@ texture = ExtResource( 2 )
 expand = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -341.0
-margin_top = -51.0
-margin_right = 341.0
-margin_bottom = 51.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = -2.0
+margin_right = 4.0
+margin_bottom = -1.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_right = 682.0
-margin_bottom = 174.0
+margin_left = 172.0
+margin_top = 213.0
+margin_right = 854.0
+margin_bottom = 387.0
 
 [node name="Tittulo" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_right = 682.0
@@ -52,4 +54,17 @@ margin_top = 106.0
 margin_right = 682.0
 margin_bottom = 174.0
 custom_fonts/font = SubResource( 2 )
+text = "0000"
 align = 1
+
+[node name="BtnMenu" type="TouchScreenButton" parent="CenterContainer/VBoxContainer"]
+position = Vector2( 117.781, 212.559 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 4 )
+
+[node name="BtnPlay" type="TouchScreenButton" parent="CenterContainer/VBoxContainer"]
+position = Vector2( 400.926, 205.156 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 5 )
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BtnMenu" to="." method="_on_TouchScreenButton3_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]
