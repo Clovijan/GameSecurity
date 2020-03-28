@@ -472,6 +472,7 @@ position = Vector2( 7334.33, 368.467 )
 scale = Vector2( 0.62, 0.63 )
 
 [node name="Dicas" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="MsgFinal" parent="Dicas" instance=ExtResource( 12 )]
 position = Vector2( 6536.38, 255.488 )
