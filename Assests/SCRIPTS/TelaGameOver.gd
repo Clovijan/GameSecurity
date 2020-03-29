@@ -10,7 +10,7 @@ func _on_TouchScreenButton3_pressed():
 	get_tree().change_scene("res://Cenas/Menu.tscn")
 	Game.lifes = 3
 	Game.coin = 0
-	Game.score = 0		
+	Game.score = 0
 	pass # Replace with function body.
 
 

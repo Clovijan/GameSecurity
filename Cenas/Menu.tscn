@@ -1,21 +1,21 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/Menu.gd" type="Script" id=1]
-[ext_resource path="res://Assests/TELA HOME/TELA INICIAL DO JOGO.jpg" type="Texture" id=2]
+[ext_resource path="res://Assests/TELA HOME/tecno.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Assests/SONS/Summer_Park.ogg" type="AudioStream" id=4]
-[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assests/BOTOES/Start.png" type="Texture" id=4]
+[ext_resource path="res://Assests/BOTOES/Quit.png" type="Texture" id=5]
+[ext_resource path="res://Assests/BOTOES/Creditos.png" type="Texture" id=6]
+[ext_resource path="res://Assests/SONS/Summer_Park.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
-outline_color = Color( 0.609375, 0.083313, 0.083313, 1 )
-font_data = ExtResource( 3 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 53
+outline_color = Color( 0.0470588, 0.0901961, 0.960784, 1 )
 font_data = ExtResource( 3 )
 
 [node name="Menu" type="Control"]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1.0
@@ -29,53 +29,46 @@ texture = ExtResource( 2 )
 expand = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -2.05054
-margin_top = -2.05054
-margin_right = -2.05054
-margin_bottom = -2.05054
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -510.172
+margin_top = -273.458
+margin_right = 513.828
+margin_bottom = -183.458
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-editor/display_folded = true
+[node name="Botoes" type="VBoxContainer" parent="CenterContainer"]
 margin_left = 108.0
-margin_top = 150.0
 margin_right = 915.0
-margin_bottom = 450.0
-alignment = 1
+margin_bottom = 90.0
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="CenterContainer/Botoes"]
 modulate = Color( 0.992157, 0.980392, 0.980392, 1 )
 margin_right = 807.0
 margin_bottom = 90.0
 custom_fonts/font = SubResource( 1 )
 text = "GAME SECURITY"
 
-[node name="BtnStart" type="Button" parent="CenterContainer/VBoxContainer"]
-margin_top = 94.0
-margin_right = 807.0
-margin_bottom = 160.0
-custom_fonts/font = SubResource( 2 )
-text = "start"
+[node name="Start" type="TouchScreenButton" parent="CenterContainer/Botoes"]
+position = Vector2( 1.8277, 175.145 )
+scale = Vector2( 1.28372, 1.04391 )
+normal = ExtResource( 4 )
 
-[node name="BtnCreditos" type="Button" parent="CenterContainer/VBoxContainer"]
-margin_top = 164.0
-margin_right = 807.0
-margin_bottom = 230.0
-custom_fonts/font = SubResource( 2 )
-text = "CREDITS"
+[node name="Quit" type="TouchScreenButton" parent="CenterContainer/Botoes"]
+position = Vector2( 2.13837, 423.089 )
+scale = Vector2( 1.28372, 1.04391 )
+normal = ExtResource( 5 )
 
-[node name="BtnQuit" type="Button" parent="CenterContainer/VBoxContainer"]
-margin_top = 234.0
-margin_right = 807.0
-margin_bottom = 300.0
-custom_fonts/font = SubResource( 2 )
-text = "Quit"
+[node name="Creditos" type="TouchScreenButton" parent="CenterContainer/Botoes"]
+position = Vector2( 1.966, 301.565 )
+scale = Vector2( 1.28372, 1.04391 )
+normal = ExtResource( 6 )
 
 [node name="SoundMenu" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource( 7 )
 
 [node name="SoundClick" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-[connection signal="pressed" from="CenterContainer/VBoxContainer/BtnStart" to="." method="_on_BtnStart_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/BtnQuit" to="." method="_on_BtnQuit_pressed"]
+stream = ExtResource( 8 )
+[connection signal="pressed" from="CenterContainer/Botoes/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="CenterContainer/Botoes/Quit" to="." method="_on_Quit_pressed"]

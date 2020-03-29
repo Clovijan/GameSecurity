@@ -1,19 +1,17 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/TelaEscolhaPerson.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TELA HOME/FundoEscuro2.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assests/BOY/Idle (1).png" type="Texture" id=4]
-[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=5]
-[ext_resource path="res://Assests/SONS/Summer_Park.ogg" type="AudioStream" id=6]
-[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assests/BOTOES/Darvin.png" type="Texture" id=5]
+[ext_resource path="res://Assests/GIRL/Idle (1).png" type="Texture" id=6]
+[ext_resource path="res://Assests/BOTOES/Chelly.png" type="Texture" id=7]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Assests/SONS/Summer_Park.ogg" type="AudioStream" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
-font_data = ExtResource( 3 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 53
 font_data = ExtResource( 3 )
 
 [node name="EsolhaPlayer" type="Control"]
@@ -41,7 +39,6 @@ text = "Player 1"
 align = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -51,8 +48,7 @@ margin_top = -600.0
 margin_right = 512.0
 
 [node name="Boy" type="Node2D" parent="CenterContainer"]
-editor/display_folded = true
-position = Vector2( 46.4206, 297.258 )
+position = Vector2( 52.45, 304.795 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -62,17 +58,12 @@ position = Vector2( 767.175, 37.964 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 4 )
 
-[node name="BtnBoy" type="Button" parent="CenterContainer/Boy"]
-margin_left = 623.977
-margin_top = 149.507
-margin_right = 891.977
-margin_bottom = 248.507
-custom_fonts/font = SubResource( 2 )
-text = "darvin"
+[node name="BtnBoy2" type="TouchScreenButton" parent="CenterContainer/Boy"]
+position = Vector2( 573.097, 153.438 )
+normal = ExtResource( 5 )
 
 [node name="Girl" type="Node2D" parent="CenterContainer"]
-editor/display_folded = true
-position = Vector2( -34.976, 298.765 )
+position = Vector2( 7.2296, 304.794 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -80,20 +71,16 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="CenterContainer/Girl"]
 position = Vector2( 262.156, 30.251 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
-[node name="BtnGirl" type="Button" parent="CenterContainer/Girl"]
-margin_left = 125.466
-margin_top = 145.823
-margin_right = 404.466
-margin_bottom = 244.823
-custom_fonts/font = SubResource( 2 )
-text = "chelly"
-
-[node name="SoundMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+[node name="BtnGirl2" type="TouchScreenButton" parent="CenterContainer/Girl"]
+position = Vector2( 98.2844, 153.438 )
+normal = ExtResource( 7 )
 
 [node name="SoundClick" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
-[connection signal="pressed" from="CenterContainer/Boy/BtnBoy" to="." method="_on_BtnBoy_pressed"]
-[connection signal="pressed" from="CenterContainer/Girl/BtnGirl" to="." method="_on_BtnGirl_pressed"]
+stream = ExtResource( 8 )
+
+[node name="SoundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+[connection signal="pressed" from="CenterContainer/Boy/BtnBoy2" to="." method="_on_BtnBoy2_pressed"]
+[connection signal="pressed" from="CenterContainer/Girl/BtnGirl2" to="." method="_on_BtnGirl2_pressed"]

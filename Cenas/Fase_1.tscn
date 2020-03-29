@@ -6,13 +6,13 @@
 [ext_resource path="res://Cenas/PlataformaMovel.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Cenas/Vida.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Cenas/ContagemMoedas.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Cenas/Pause.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Cenas/Moeda.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Cenas/Moeda2.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Cenas/Porta.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Cenas/Dica.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Cenas/Score.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Cenas/Score.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Cenas/Pause.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Cenas/Inimigo.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Cenas/Moeda.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Cenas/Moeda2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Cenas/Porta.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Cenas/Dica.tscn" type="PackedScene" id=13]
 
 [node name="ContainerWorld" type="Control"]
 anchor_right = 1.0
@@ -69,445 +69,440 @@ editor/display_folded = false
 
 [node name="ContagemMoedas" parent="." instance=ExtResource( 6 )]
 
-[node name="Pause" parent="." instance=ExtResource( 7 )]
+[node name="Score" parent="." instance=ExtResource( 7 )]
+
+[node name="Pause" parent="." instance=ExtResource( 8 )]
 
 [node name="Inimigo" type="Node" parent="."]
-editor/display_folded = true
 
-[node name="Inimigo" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1519.72, 470.069 )
 
-[node name="Inimigo4" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo4" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 2537.87, -153.994 )
 comprimento = 400
 velocidade = 2
 
-[node name="Inimigo7" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo7" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 659.197, -256.949 )
 velocidade = 3
 
-[node name="Inimigo17" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo17" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1723.71, 93.2194 )
 velocidade = 3
 
-[node name="Inimigo20" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo20" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1649.83, 1133.63 )
 velocidade = 3
 
-[node name="Inimigo23" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo23" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -781.891, 715.002 )
 
-[node name="Inimigo26" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo26" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -788.048, 481.064 )
 velocidade = 2
 
-[node name="Inimigo29" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo29" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -781.039, 182.909 )
 velocidade = 4
 
-[node name="Inimigo32" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo32" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -767.028, -246.277 )
 velocidade = 5
 
-[node name="Inimigo14" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo14" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 775.479, -256.222 )
 velocidade = 3
 
-[node name="Inimigo18" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo18" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1839.99, 93.9462 )
 velocidade = 3
 
-[node name="Inimigo19" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo19" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1766.12, 1134.35 )
 velocidade = 3
 
-[node name="Inimigo22" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo22" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -665.609, 715.729 )
 
-[node name="Inimigo25" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo25" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -671.765, 481.791 )
 velocidade = 2
 
-[node name="Inimigo31" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo31" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -650.745, -245.55 )
 velocidade = 5
 
-[node name="Inimigo28" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo28" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -664.757, 183.635 )
 velocidade = 4
 
-[node name="Inimigo15" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo15" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 900.548, -256.222 )
 velocidade = 3
 
-[node name="Inimigo16" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo16" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1965.06, 93.9462 )
 velocidade = 3
 
-[node name="Inimigo21" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo21" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1891.19, 1134.35 )
 velocidade = 3
 
-[node name="Inimigo24" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo24" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -540.539, 715.729 )
 
-[node name="Inimigo27" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo27" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -546.696, 481.791 )
 velocidade = 2
 
-[node name="Inimigo30" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo30" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -539.688, 183.635 )
 velocidade = 4
 
-[node name="Inimigo33" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo33" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( -525.676, -245.55 )
 velocidade = 5
 
-[node name="Inimigo5" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo5" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 3294.28, 741.178 )
 comprimento = 300
 velocidade = 4
 
-[node name="Inimigo6" parent="Inimigo" instance=ExtResource( 8 )]
-position = Vector2( 4674.17, 1021.59 )
-comprimento = 0
-velocidade = 0
-
-[node name="Inimigo2" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo2" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 2140.97, 473.646 )
 comprimento = 300
 velocidade = 3
 
-[node name="Inimigo3" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo3" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1773.5, 470.951 )
 
-[node name="Inimigo8" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo8" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 6044.7, 469.507 )
 comprimento = 100
 velocidade = 4
 
-[node name="Inimigo9" parent="Inimigo" instance=ExtResource( 8 )]
+[node name="Inimigo9" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 2701.02, 1216.03 )
 velocidade = 4
 
-[node name="Inimigo10" parent="Inimigo" instance=ExtResource( 8 )]
-position = Vector2( 3371.95, 1146.55 )
+[node name="Inimigo10" parent="Inimigo" instance=ExtResource( 9 )]
+position = Vector2( 3371.95, 1142.3 )
 comprimento = 400
-velocidade = 5
+velocidade = 3
 
-[node name="Inimigo11" parent="Inimigo" instance=ExtResource( 8 )]
-position = Vector2( 3669.6, 1150.05 )
+[node name="Inimigo11" parent="Inimigo" instance=ExtResource( 9 )]
+position = Vector2( 3669.6, 1145.8 )
 comprimento = 400
-velocidade = 5
+velocidade = 3
 
-[node name="Inimigo12" parent="Inimigo" instance=ExtResource( 8 )]
-position = Vector2( 4128.79, 1147.2 )
+[node name="Inimigo12" parent="Inimigo" instance=ExtResource( 9 )]
+position = Vector2( 3915.68, 1150.7 )
 comprimento = 400
-velocidade = 5
+velocidade = 3
 
-[node name="Inimigo13" parent="Inimigo" instance=ExtResource( 8 )]
-position = Vector2( 4282.81, 1150.05 )
+[node name="Inimigo13" parent="Inimigo" instance=ExtResource( 9 )]
+position = Vector2( 4220.82, 1149.67 )
 comprimento = 400
 velocidade = 5
 
 [node name="Moedas" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="Moeda" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 4875.77, -298.575 )
 
-[node name="Moeda2" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda2" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 4988.05, -235.44 )
 
-[node name="Moeda5" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda5" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5248.81, -67.6071 )
 
-[node name="Moeda4" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda4" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5117.57, -133.189 )
 
-[node name="Moeda3" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda3" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5375.14, -11.0379 )
 
-[node name="Moeda6" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda6" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5507.16, 56.9878 )
 
-[node name="Moeda7" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda7" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5633.33, 118.969 )
 
-[node name="Moeda8" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda8" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5759.75, 182.175 )
 
-[node name="Moeda9" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda9" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 5883, 248.54 )
 
-[node name="Moeda10" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda10" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 573.803, 441.387 )
 
-[node name="Moeda11" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda11" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 689.115, 443.483 )
 
-[node name="Moeda12" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda12" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 804.428, 441.387 )
 
-[node name="Moeda13" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda13" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 923.933, 441.387 )
 
-[node name="Moeda14" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda14" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1039.25, 445.58 )
 
-[node name="Moeda15" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda15" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1631.27, 440.686 )
 
-[node name="Moeda16" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda16" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1742.91, 442.578 )
 
-[node name="Moeda17" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda17" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1854.55, 444.47 )
 
-[node name="Moeda19" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda19" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2370.93, 531.535 )
 
-[node name="Moeda20" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda20" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2241.84, 630.61 )
 
-[node name="Moeda21" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda21" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1923.6, 699.662 )
 
-[node name="Moeda26" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda26" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 803.625, 702.107 )
 
-[node name="Moeda35" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda35" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 398.621, -290.439 )
 
-[node name="Moeda36" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda36" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1439.01, -299.037 )
 
-[node name="Moeda67" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda67" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 529.167, 1115.75 )
 
-[node name="Moeda72" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda72" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1467.6, 1115.75 )
 
-[node name="Moeda77" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda77" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2410.79, 1120.52 )
 
-[node name="Moeda44" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda44" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2208.56, -286.14 )
 
-[node name="Moeda56" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda56" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3470.92, -133.704 )
 
-[node name="Moeda62" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda62" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3131.51, 698.973 )
 
-[node name="Moeda46" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda46" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1490.77, 51.4189 )
 
-[node name="Moeda55" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda55" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1490.77, 51.4189 )
 
-[node name="Moeda22" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda22" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1836.53, 699.662 )
 
-[node name="Moeda27" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda27" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 716.56, 702.107 )
 
-[node name="Moeda34" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda34" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 311.555, -290.439 )
 
-[node name="Moeda40" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda40" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1351.95, -299.037 )
 
-[node name="Moeda64" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda64" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 442.102, 1115.75 )
 
-[node name="Moeda70" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda70" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1380.53, 1115.75 )
 
-[node name="Moeda74" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda74" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2323.72, 1120.52 )
 
-[node name="Moeda41" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda41" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2124.21, -286.14 )
 
-[node name="Moeda60" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda60" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3386.56, -133.704 )
 
-[node name="Moeda61" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda61" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3047.15, 698.973 )
 
-[node name="Moeda50" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda50" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1403.7, 51.4189 )
 
-[node name="Moeda51" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda51" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1403.7, 51.4189 )
 
-[node name="Moeda23" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda23" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1743.46, 699.662 )
 
-[node name="Moeda28" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda28" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 623.49, 702.107 )
 
-[node name="Moeda31" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda31" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 218.485, -290.439 )
 
-[node name="Moeda37" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda37" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1258.88, -299.037 )
 
-[node name="Moeda65" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda65" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 349.032, 1115.75 )
 
-[node name="Moeda73" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda73" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1287.46, 1115.75 )
 
-[node name="Moeda78" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda78" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2230.65, 1120.52 )
 
-[node name="Moeda42" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda42" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2031.14, -286.14 )
 
-[node name="Moeda59" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda59" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3293.49, -133.704 )
 
-[node name="Moeda63" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda63" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2954.08, 698.973 )
 
-[node name="Moeda49" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda49" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1310.63, 51.4189 )
 
-[node name="Moeda53" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda53" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1310.63, 51.4189 )
 
-[node name="Moeda24" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda24" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1662.4, 699.662 )
 
-[node name="Moeda30" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda30" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 542.429, 702.107 )
 
-[node name="Moeda33" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda33" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 137.424, -290.439 )
 
-[node name="Moeda38" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda38" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1177.82, -299.037 )
 
-[node name="Moeda66" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda66" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 267.971, 1115.75 )
 
-[node name="Moeda69" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda69" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1206.4, 1115.75 )
 
-[node name="Moeda76" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda76" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2149.59, 1120.52 )
 
-[node name="Moeda43" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda43" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1950.08, -286.14 )
 
-[node name="Moeda58" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda58" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3212.43, -133.704 )
 
-[node name="Moeda48" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda48" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1229.57, 51.4189 )
 
-[node name="Moeda54" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda54" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1229.57, 51.4189 )
 
-[node name="Moeda25" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda25" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1575.34, 696.659 )
 
-[node name="Moeda29" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda29" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 455.363, 699.105 )
 
-[node name="Moeda32" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda32" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 50.3589, -293.441 )
 
-[node name="Moeda39" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda39" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1090.75, -302.039 )
 
-[node name="Moeda68" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda68" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 180.905, 1112.75 )
 
-[node name="Moeda71" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda71" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1119.33, 1112.75 )
 
-[node name="Moeda75" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda75" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 2062.53, 1117.51 )
 
-[node name="Moeda45" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda45" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1863.01, -289.142 )
 
-[node name="Moeda57" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda57" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 3125.36, -136.707 )
 
-[node name="Moeda47" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda47" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1142.5, 48.4164 )
 
-[node name="Moeda52" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda52" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1142.5, 48.4164 )
 
-[node name="Moeda18" parent="Moedas" instance=ExtResource( 9 )]
+[node name="Moeda18" parent="Moedas" instance=ExtResource( 10 )]
 position = Vector2( 1960.51, 446.362 )
 
 [node name="MoedasDicas" type="Node" parent="."]
+editor/display_folded = true
 
-[node name="Moeda4" parent="MoedasDicas" instance=ExtResource( 10 )]
+[node name="Moeda4" parent="MoedasDicas" instance=ExtResource( 11 )]
 position = Vector2( 3795.66, 696.339 )
 
-[node name="Moeda" parent="MoedasDicas" instance=ExtResource( 10 )]
+[node name="Moeda" parent="MoedasDicas" instance=ExtResource( 11 )]
 position = Vector2( 59.5872, 704.012 )
 
-[node name="Moeda5" parent="MoedasDicas" instance=ExtResource( 10 )]
+[node name="Moeda5" parent="MoedasDicas" instance=ExtResource( 11 )]
 position = Vector2( 438.827, 438.252 )
 
-[node name="Moeda79" parent="MoedasDicas" instance=ExtResource( 10 )]
+[node name="Moeda79" parent="MoedasDicas" instance=ExtResource( 11 )]
 position = Vector2( -305.85, 695.542 )
 
-[node name="Moeda2" parent="MoedasDicas" instance=ExtResource( 10 )]
+[node name="Moeda2" parent="MoedasDicas" instance=ExtResource( 11 )]
 position = Vector2( 6224.86, 422.886 )
 
-[node name="Moeda3" parent="MoedasDicas" instance=ExtResource( 10 )]
+[node name="Moeda3" parent="MoedasDicas" instance=ExtResource( 11 )]
 position = Vector2( 4801.93, 158.482 )
 
-[node name="Porta" parent="." instance=ExtResource( 11 )]
+[node name="Porta" parent="." instance=ExtResource( 12 )]
 position = Vector2( 7334.33, 368.467 )
 scale = Vector2( 0.62, 0.63 )
 
 [node name="Dicas" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="MsgFinal" parent="Dicas" instance=ExtResource( 12 )]
+[node name="MsgFinal" parent="Dicas" instance=ExtResource( 13 )]
 position = Vector2( 6536.38, 255.488 )
 width = 470
 height = 200
 texto = "Parabéns! Você chegou ao núcleo do antivírus ao chegar na porta a frente será feita uma pergunta responda ela corretamente para que o antivírus seja ativado! Boa Sorte!"
 
-[node name="MsgInicial" parent="Dicas" instance=ExtResource( 12 )]
+[node name="MsgInicial" parent="Dicas" instance=ExtResource( 13 )]
 position = Vector2( 762.559, 259.531 )
 width = 600
 height = 250
 texto = "Um vírus invadiu o computador e desativou o antivírus, sua missão é coletar moedas elas irão fornecer informacões sobre o vírus para que se possa ativar novamente o antivírus. O computador é um ambiente inexplorado inimigos irão aparecer não deixe de eliminá-los!"
 
-[node name="Dica1" parent="Dicas" instance=ExtResource( 12 )]
+[node name="Dica1" parent="Dicas" instance=ExtResource( 13 )]
 position = Vector2( 378.299, 523.058 )
 width = 500
 height = 200
 texto = "Um virus de computador, tem a habilidade de se replicar e foi desenvolvido para se propagar de uma maquina para outra. Os vírus de computador se reproduzem e se propagam sem programação, como um arquivo ou documento."
 
-[node name="Dica2" parent="Dicas" instance=ExtResource( 12 )]
+[node name="Dica2" parent="Dicas" instance=ExtResource( 13 )]
 position = Vector2( -7.47632, 519.085 )
 width = 500
 height = 200
 texto = "Um vírus de computador é um tipo de programa ou código malicioso criado para alterar a forma como um computador funciona e desenvolvido para se propagar de um computador para outro."
 
-[node name="Dica3" parent="Dicas" instance=ExtResource( 12 )]
+[node name="Dica3" parent="Dicas" instance=ExtResource( 13 )]
 position = Vector2( 5110.52, -17.4409 )
 width = 400
 height = 200
 texto = "Depois de se anexar com êxito a um programa, arquivo ou documento, o vírus permanece inativo até que as circunstâncias obriguem o computador a executar o seu código."
 
-[node name="Dica4" parent="Dicas" instance=ExtResource( 12 )]
+[node name="Dica4" parent="Dicas" instance=ExtResource( 13 )]
 position = Vector2( 4116.3, 513.373 )
 width = 500
 height = 250
 texto = "Apesar de alguns vírus terem uma intenção humorística ou efeitos engraçados, outros podem causar danos devastadores, como apagar dados ou causar danos permanentes ao disco rígido e, ainda pior, alguns foram criados para a obtenção de ganhos financeiros."
-
-[node name="Score" parent="." instance=ExtResource( 13 )]
