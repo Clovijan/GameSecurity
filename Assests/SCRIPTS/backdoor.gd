@@ -25,10 +25,8 @@ func _process(_delta):
 			flip = true
 			
 func dano():
-	get_node("Anime").play("Die")
 	Game.score += 10
-	$SoundDead.play()
-	
-func die():
 	$".".queue_free()
+
+	
 

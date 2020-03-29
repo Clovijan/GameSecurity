@@ -25,4 +25,5 @@ func _process(_delta):
 			flip = true
 			
 func dano():
+	Game.score += 10
 	$".".queue_free()
