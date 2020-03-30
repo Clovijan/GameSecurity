@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/Perguntas.gd" type="Script" id=1]
+[ext_resource path="res://Assests/TELA HOME/Quadro negro.jpg" type="Texture" id=2]
+[ext_resource path="res://Assests/FONTE/Aero.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assests/SONS/EndGame.wav" type="AudioStream" id=4]
+[ext_resource path="res://Assests/SONS/PassouFase.wav" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="Pergunta" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Fundo" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+
+[node name="Container" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 40.0
+margin_right = -40.0
+margin_bottom = -40.0
+
+[node name="Pergunta" type="Label" parent="Container"]
+margin_right = 944.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 80 )
+custom_fonts/font = SubResource( 1 )
+text = "Pergunta sorteada"
+align = 1
+autowrap = true
+
+[node name="Resposta_1" type="CheckBox" parent="Container"]
+margin_top = 84.0
+margin_right = 944.0
+margin_bottom = 164.0
+rect_min_size = Vector2( 0, 80 )
+custom_fonts/font = SubResource( 2 )
+text = "Resposta"
+
+[node name="Resposta_2" type="CheckBox" parent="Container"]
+margin_top = 168.0
+margin_right = 944.0
+margin_bottom = 248.0
+rect_min_size = Vector2( 0, 80 )
+custom_fonts/font = SubResource( 2 )
+text = "Resposta"
+
+[node name="Resposta_3" type="CheckBox" parent="Container"]
+margin_top = 252.0
+margin_right = 944.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 0, 80 )
+custom_fonts/font = SubResource( 2 )
+text = "Resposta"
+clip_text = true
+
+[node name="Resposta_4" type="CheckBox" parent="Container"]
+margin_top = 336.0
+margin_right = 944.0
+margin_bottom = 416.0
+rect_min_size = Vector2( 0, 80 )
+custom_fonts/font = SubResource( 2 )
+text = "Resposta"
+
+[node name="Resultado" type="Label" parent="Container"]
+margin_top = 420.0
+margin_right = 944.0
+margin_bottom = 500.0
+rect_min_size = Vector2( 0, 80 )
+custom_fonts/font = SubResource( 1 )
+text = "Resultado"
+align = 1
+autowrap = true
+
+[node name="Endgame" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="FaseSeguinte" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+[connection signal="pressed" from="Container/Resposta_1" to="." method="_on_Resposta_1_pressed"]
+[connection signal="pressed" from="Container/Resposta_2" to="." method="_on_Resposta_2_pressed"]
+[connection signal="pressed" from="Container/Resposta_3" to="." method="_on_Resposta_3_pressed"]
+[connection signal="pressed" from="Container/Resposta_4" to="." method="_on_Resposta_4_pressed"]
+[connection signal="finished" from="Endgame" to="." method="_on_Endgame_finished"]
+[connection signal="finished" from="FaseSeguinte" to="." method="_on_FaseSeguinte_finished"]

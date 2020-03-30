@@ -74,6 +74,7 @@ editor/display_folded = false
 [node name="Pause" parent="." instance=ExtResource( 8 )]
 
 [node name="Inimigo" type="Node" parent="."]
+editor/display_folded = true
 
 [node name="Inimigo" parent="Inimigo" instance=ExtResource( 9 )]
 position = Vector2( 1519.72, 470.069 )
@@ -467,6 +468,7 @@ position = Vector2( 4801.93, 158.482 )
 [node name="Porta" parent="." instance=ExtResource( 12 )]
 position = Vector2( 7334.33, 368.467 )
 scale = Vector2( 0.62, 0.63 )
+Cena = "res://Cenas/Pergunta.tscn"
 
 [node name="Dicas" type="Node" parent="."]
 editor/display_folded = true

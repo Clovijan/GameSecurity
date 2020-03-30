@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/PassouFase.wav-db1265f5ca278fe8d14deb638666a4cb.sample"
+
+[deps]
+
+source_file="res://Assests/SONS/PassouFase.wav"
+dest_files=[ "res://.import/PassouFase.wav-db1265f5ca278fe8d14deb638666a4cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

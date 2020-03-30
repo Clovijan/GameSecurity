@@ -1,7 +1,7 @@
 extends Node
 
 var lifes = 3 setget setLifes
-var person = 2 setget setPerson
+var person = 1 setget setPerson
 var coin = 0 setget setCoin
 var score = 0 setget setScore
 
