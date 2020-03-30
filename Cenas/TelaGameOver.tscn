@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assests/SCRIPTS/TelaGameOver.gd" type="Script" id=1]
 [ext_resource path="res://Assests/TELA HOME/1.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/ka1.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assests/BOTOES/Menu.png" type="Texture" id=4]
 [ext_resource path="res://Assests/BOTOES/Play.png" type="Texture" id=5]
+[ext_resource path="res://Assests/SONS/jump1.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
@@ -29,6 +30,7 @@ texture = ExtResource( 2 )
 expand = true
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 2.0
@@ -66,5 +68,8 @@ normal = ExtResource( 4 )
 position = Vector2( 400.926, 205.156 )
 scale = Vector2( 0.8, 0.8 )
 normal = ExtResource( 5 )
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
 [connection signal="pressed" from="CenterContainer/VBoxContainer/BtnMenu" to="." method="_on_TouchScreenButton3_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/BtnPlay" to="." method="_on_BtnPlay_pressed"]

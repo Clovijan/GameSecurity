@@ -7,6 +7,7 @@ func _ready():
 	
 
 func _on_TouchScreenButton3_pressed():
+	$Click.play()
 	get_tree().change_scene("res://Cenas/Menu.tscn")
 	Game.lifes = 3
 	Game.coin = 0
@@ -15,6 +16,7 @@ func _on_TouchScreenButton3_pressed():
 
 
 func _on_BtnPlay_pressed():
+	$Click.play()
 	get_tree().change_scene("res://Cenas/Fase_1.tscn")
 	Game.lifes = 3
 	Game.coin = 0
