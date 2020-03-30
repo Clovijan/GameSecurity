@@ -268,7 +268,6 @@ shape = SubResource( 3 )
 position = Vector2( -122.705, 50.8311 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
@@ -286,7 +285,6 @@ shape = SubResource( 3 )
 position = Vector2( 706.527, -243.071 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
@@ -304,6 +302,7 @@ shape = SubResource( 3 )
 position = Vector2( 2.86432, -401.745 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
@@ -321,6 +320,7 @@ shape = SubResource( 3 )
 position = Vector2( 1280.82, -19.558 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
@@ -338,7 +338,6 @@ shape = SubResource( 3 )
 position = Vector2( 817.066, -36.8984 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
@@ -356,6 +355,7 @@ shape = SubResource( 3 )
 position = Vector2( -215.027, -367.599 )
 frames = SubResource( 4 )
 animation = "move"
+frame = 1
 playing = true
 centered = false
 
@@ -373,7 +373,6 @@ shape = SubResource( 3 )
 position = Vector2( -139.125, -131.718 )
 frames = SubResource( 4 )
 animation = "move"
-frame = 1
 playing = true
 centered = false
 
