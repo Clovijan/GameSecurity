@@ -14,6 +14,8 @@
 [ext_resource path="res://Cenas/Porta.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Cenas/Dica.tscn" type="PackedScene" id=13]
 
+
+
 [node name="ContainerWorld" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0

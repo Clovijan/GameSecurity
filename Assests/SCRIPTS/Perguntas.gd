@@ -44,10 +44,9 @@ func set_pergunta_atual():
 
 func verifica_resposta(resposta_usuario):
 	if(resposta_usuario == pergunta_atual.correta):
-		$Container/Resultado.text = "Resposta Correta :)"
+		$Container/Resultado.text = "Resposta Correta :) Aguarde!"
 		$Container/Resultado.show()
-		$FaseSeguinte.play()
-		
+		$FaseSeguinte.play()		
 	else:
 		$Container/Resultado.text = "Resposta Incorreta :("
 		$Container/Resultado.show()
@@ -82,7 +81,10 @@ func _on_Endgame_finished():
 	get_tree().change_scene("res://Cenas/TelaGameOver.tscn") #Tela GameOver
 	pass # Replace with function body.
 
+	
+	pass # Replace with function body.
+
 
 func _on_FaseSeguinte_finished():
-	get_tree().change_scene("res://Cenas/Menu.tscn") #Cena seguinte
+	get_tree().change_scene("res://Cenas/Fase_2.tscn") #Cena seguinte
 	pass # Replace with function body.

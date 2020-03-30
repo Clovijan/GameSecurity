@@ -15,3 +15,8 @@ func _on_Quit_pressed():
 	$SoundClick.play()
 	get_tree().quit()
 	pass # Replace with function body.
+
+
+func _on_Creditos_pressed():
+	get_tree().change_scene("res://Cenas/Fim.tscn")
+	pass # Replace with function body.

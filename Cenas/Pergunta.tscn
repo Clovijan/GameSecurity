@@ -4,7 +4,7 @@
 [ext_resource path="res://Assests/TELA HOME/Quadro negro.jpg" type="Texture" id=2]
 [ext_resource path="res://Assests/FONTE/Aero.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assests/SONS/EndGame.wav" type="AudioStream" id=4]
-[ext_resource path="res://Assests/SONS/PassouFase.wav" type="AudioStream" id=5]
+[ext_resource path="res://Assests/SONS/coin_SFX.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -91,6 +91,7 @@ stream = ExtResource( 4 )
 
 [node name="FaseSeguinte" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+volume_db = -18.452
 [connection signal="pressed" from="Container/Resposta_1" to="." method="_on_Resposta_1_pressed"]
 [connection signal="pressed" from="Container/Resposta_2" to="." method="_on_Resposta_2_pressed"]
 [connection signal="pressed" from="Container/Resposta_3" to="." method="_on_Resposta_3_pressed"]

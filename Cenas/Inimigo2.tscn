@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/Inimigo.gd" type="Script" id=1]
+[ext_resource path="res://Assests/BLACKDOOR/spam1.png" type="Texture" id=2]
+[ext_resource path="res://Assests/BLACKDOOR/spam2.png" type="Texture" id=3]
+[ext_resource path="res://Assests/SONS/fall.wav" type="AudioStream" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Ide",
+"speed": 3.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 31.8538, 32.3979 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Die"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.560784, 0.0901961, 0.0901961, 1 ), Color( 0.560784, 0.0901961, 0.0901961, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "die"
+} ]
+}
+
+[node name="Inimigo" type="StaticBody2D"]
+position = Vector2( 553.147, 242.237 )
+collision_layer = 6
+collision_mask = 6
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.04753, -0.349153 )
+scale = Vector2( 1.29935, 1.35754 )
+frames = SubResource( 1 )
+animation = "Ide"
+frame = 1
+playing = true
+
+[node name="shape" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+
+[node name="Anime" type="AnimationPlayer" parent="."]
+anims/Die = SubResource( 3 )
+
+[node name="SoundDead" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

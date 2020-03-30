@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assests/SCRIPTS/Fim.gd" type="Script" id=1]
+[ext_resource path="res://Assests/TELA HOME/download.jpg" type="Texture" id=2]
+[ext_resource path="res://Assests/TELA HOME/Alerta.png" type="Texture" id=3]
+[ext_resource path="res://Assests/FONTE/Aero.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 4 )
+
+[node name="Fim" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 323.655, 95.8977 )
+scale = Vector2( 1.4835, 1.4835 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Button" type="Button" parent="."]
+margin_left = 407.273
+margin_top = 458.745
+margin_right = 624.273
+margin_bottom = 532.745
+custom_fonts/font = SubResource( 1 )
+text = "Continue"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
