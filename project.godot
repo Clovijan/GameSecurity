@@ -16,7 +16,8 @@ _global_script_class_icons={
 [application]
 
 config/name="GameSecurity"
-run/main_scene="res://Cenas/Fase_2.tscn"
+run/main_scene="res://Cenas/Menu.tscn"
+boot_splash/image="res://abertura.png"
 
 [autoload]
 
